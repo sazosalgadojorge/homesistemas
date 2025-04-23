@@ -1,0 +1,314 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Verfrut - Technology</title>
+    <meta name="author" content="Developer Area">
+    <meta name="description" content="Verfrut Technology">
+    <meta name="keywords" content="Verfrut Technology & IT Solutions">
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Favicons - Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--==============================
+	  Google Fonts
+	============================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--==============================
+	    All CSS File
+	============================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Iconos -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+</head>
+
+<body class="theme-blue3">
+
+ <!--******************************** Code Start From Here ******************************** -->
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+<!--=========Header (Acá se renderiza encabezado)=========-->
+
+<div id="header-area">   
+</div>
+
+ <!--============================== Breadcrumb ==============================-->
+
+    <div class="container-fluid pt-3" id="Titulo">
+    <div class="row p-3 justify-content-center">
+        <div class="col justify-content-center">
+            <h1 class="justify-content-center fs-1">Anexos Telefónicos</h1>
+        </div>
+    </div>
+    </div>
+
+<!--============================== Tabla ==============================-->
+    <div class="row bg-table">
+        <div class="container-fluid p-5">
+    
+            <div class="row">
+    
+                    <div class="col-sm-12 col-md-5 p-3">
+                        <select class="form-select" aria-label="Default select example" id="selectempresa" onchange="filterempresa(this.value)">
+                            <option value="todas" selected>Seleccione Empresa (Todas)</option>
+                        </select>
+                    </div>
+    
+                    <div class="col-sm-12 col-md-5 p-3">
+                        <select class="form-select" aria-label="Default select example" id="selectdepartamento" onchange="filterDepartamento(this.value)">
+                            <option value="todos" selected>Seleccione Departamento</option>
+                        </select>
+                    </div>
+    
+                    <div class="col-sm-12 col-md-2 p-3">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Buscar" oninput="filterAnexos()">
+                            <label for="floatingInput">Buscar</label>
+                        </div>
+                    </div>
+    
+            </div>
+    
+            <div class="row tabla-anexos">
+                    <div class="col">
+                    <table class="table table- table-hover table-bordered"> 
+                        <thead>
+                            <tr class="header-tabla">
+                                <th scope="col">Empresa</th>
+                                <th scope="col">Departamento</th>
+                                <th scope="col">Trabajador</th>
+                                <th scope="col">Anexo</th>
+                                <th scope="col">Mail</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        </tbody>
+                    </table>
+                    </div>
+            </div>
+    
+            <div class="d-flex justify-content-center pt-3" id="pagination">
+            </div>
+    
+            <!-- <div class="row paginacion-anexos pt-3">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Siguiente</a>
+                        </li>
+                        </ul>
+                    </nav>
+            </div> -->
+        </div>
+    </div>
+ 
+    
+<!--============================== Footer Area ==============================-->
+
+    <footer class="footer-wrapper footer-layout5 footer-layout12 footer-layout16">
+        <div class="container th-container4">
+            <div class="footer-top">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-xl">
+                        <div class="footer-newsletter">
+                            <div class="footer-newsletter-content">
+                                <h2 class="newsletter-title text-white">Contáctate <br>con el<br> equipo TI</h2>
+                            </div>
+                            <form class="newsletter-form">
+                                <input class="form-control" type="email" placeholder="Dirección de Email" required="">
+                                <button type="submit" class="th-btn">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-area">
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-xxl-3 col-xl-4">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title style2 text-white">Chile</h3>
+                            <div class="th-widget-about style2">
+                                <a href="tel:+5173480005" class="text-inherit">+56 9 88776655</a>
+                                <p class="footer-info"><a class="text-inherit"
+                                        href="mailto:contacto@verfrut.cl">contacto@verfrut.cl</a></p>
+                                <p class="footer-info">Parcela 5, Santa Inés (Las Cabras)</p>
+                                <!-- <div class="th-social">
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title style2 text-white">Perú</h3>
+                            <div class="th-widget-about">
+                                <div class="footer-info">
+                                    <p class="footer-info_text">
+                                        <a href="tel:+5173480005" class="text-inherit">+51 734 800 05</a>
+                                    </p>
+                                </div>
+                                <p class="footer-info"><a class="text-inherit"
+                                        href="mailto:webteck@gmail.com">contacto@verfrut.cl</a></p>
+                                <p class="footer-info">Caserio El Papayo Mz. "O" Castilla Pirua</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu footer-widget">
+                            <h3 class="widget_title style2 text-white" href="#widget-area">Contacto</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="about.html">Recursos Humanos</a></li>
+                                    <li><a href="contact.html">Secretaría</a></li>
+                                    <li><a href="blog.html">Mesa de Ayuda</a></li>
+                                    <li><a href="contact.html">Exportadora</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-auto">
+                        <div class="widget widget_offer footer-widget">
+                            <h3 class="widget_title style2 text-white">Descarga FrutApp</h3>
+                            <div class="download-btn-wrap">
+                                <div class="mb-10">
+                                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.mobil.verfrut&pcampaignid=web_share" target="_blank" class="download-btn">
+                                        <img src="assets/img/normal/google-play.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a target="_blank" href="https://apps.apple.com/cl/app/frutapp/id6478648879?l=en-GB" target="_blank" class="download-btn">
+                                        <img src="assets/img/normal/app.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a
+                                href="https://themeforest.net/user/themeholy">Verfrut Technology</a>. All Rights
+                            Reserved.
+                        </p>
+                    </div>
+                    <!-- <div class="col-lg-6 text-center text-md-end">
+                        <ul class="footer-menu">
+                            <li><a href="service.html">service</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="contact.html">Articles</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+    <!-- Scroll To Top -->
+    <div class="scroll-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+        </svg>
+    </div>
+
+    <!--==============================
+    All Js File
+============================== -->
+
+    <script src="header.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="assets/js/atajos.js"></script>
+
+    <script src="assets/js/tabla-style.js"></script>
+    <!-- Jquery -->
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- Swiper Slider -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Counter Up -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="assets/js/circle-progress.js"></script>
+    <!-- Range Slider -->
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <!-- Isotope Filter -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- Tilt JS -->
+    <script src="assets/js/tilt.jquery.min.js"></script>
+
+    <!-- gsap -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/smooth-scroll.js"></script>
+
+    <!-- Particles JS -->
+    <script src="assets/js/particles.min.js"></script>
+
+    <script src="assets/js/particles-config.js"></script>
+    <!-- Main Js File -->
+    <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
