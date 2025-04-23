@@ -1598,7 +1598,7 @@ textarea.is-invalid {
 }
 
 .slider-area {
-  position: relative;
+  position: relative; /* Establece la posición relativa para que los elementos hijos con posición absoluta se posicionen en relación a este contenedor */
 }
 
 .slider-arrow {
