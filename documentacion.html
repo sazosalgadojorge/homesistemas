@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Documentación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    tailwind.config = {
+      plugins: [tailwind.typography]
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+</head>
+<body class="flex h-screen">
+  <!-- Árbol de navegación -->
+  <aside class="w-64 bg-gray-100 p-4 overflow-y-auto">
+    <ul id="navTree" class="space-y-2">
+      <li><a href="#" data-doc="intro.md" class="prose text-blue-600 hover:underline">Introducción</a></li>
+      <li><a href="#" data-doc="getting-started.md" class="prose text-blue-600 hover:underline">Comenzando</a></li>
+      <li><a href="#" data-doc="advanced-topics.md" class="prose text-blue-600 hover:underline">Temas avanzados</a></li>
+    </ul>
+  </aside>
+
+  <!-- Contenido -->
+  <main class="flex-1 p-6 overflow-y-auto">
+    <article id="docContent" class="prose max-w-none">
+      <p>Selecciona un documento del menú.</p>
+    </article>
+  </main>
+
+  <script src="docs.js"></script>
+</body>
+</html>
