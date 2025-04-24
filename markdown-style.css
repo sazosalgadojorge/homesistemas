@@ -34,7 +34,7 @@
 .title-markdown {
     color: #737887;
     font-weight: 400;
-    padding: 6px 8px;
+    padding: 8px 8px;
     border-radius: 5px;
 }
 
@@ -45,7 +45,7 @@
 #navTree a.activo {
   color: #0d6efd; /* azul Bootstrap */
   background-color: #e7f1ff;
-  padding: 6px 8px;
+  padding: 8px 8px;
   border-radius: 5px;
 }
 

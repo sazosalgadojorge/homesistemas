@@ -1,4 +1,4 @@
-// Documentación MD
+// Documentación MD Script
 
 document.querySelectorAll('#navTree a').forEach(link => {
   link.addEventListener('click', async (e) => {
