@@ -1,8 +1,12 @@
-.markdown-docs h1{
+/* Hoja de estilos de los archivos.md */
+/* Para modificar titulos ya sea H1, p, ul etc...*/
+/* Esto solo afecta a estos archivos y no a la web completa (Tiene un reset css)*/
+
+.markdown-docs h1{ /* Modifica los Títulos (h1)*/
     color: #737887;
     font-size: 1.5rem;
 }
-.markdown-docs h2{
+.markdown-docs h2{ /* Modifica los Sub Títulos (h2)*/
     font-size: large;
     font-size: 1rem;
     color: #737887;
@@ -10,14 +14,14 @@
 .markdown-docs p,
 .markdown-docs ul,
 .markdown-docs pre {
-  all: unset; /* Resetea todos los estilos heredados si lo necesitas */
+  all: unset; /* Resetea todos los estilos heredados si ecesitas */
   display: block;
   margin: 1rem 0;
   font-family: "Montserrat", serif;
 }
 
 .markdown-docs ul {
-  padding-left: 5rem;
+  padding-left: 5rem; 
   list-style-type: disc;
 }
 
@@ -28,14 +32,21 @@
   border-radius: 4px;
 }
 .title-markdown {
-    color: black;
+    color: #737887;
     font-weight: 400;
-    padding: 6px;
-    border-radius: 8%;
+    padding: 6px 8px;
+    border-radius: 5px;
 }
 
 .title-markdown:hover {
     background-color: var(--smoke-color);
+}
+
+#navTree a.activo {
+  color: #0d6efd; /* azul Bootstrap */
+  background-color: #e7f1ff;
+  padding: 6px 8px;
+  border-radius: 5px;
 }
 
 
@@ -44,16 +55,24 @@
     padding-left: 0;
 }
 
-/* #navTree {
-    background-color: var(--smoke-color);
-    border-radius: 2%;
-} */
+
 
 .markdown-docs::-webkit-scrollbar {
     width: 6px;
 }
-  
+
+
   .markdown-docs::-webkit-scrollbar-thumb {
     background-color: #ccc;
     border-radius: 4px;
 }
+
+.fi {
+  position: relative;
+  top: 2px; /* puedes ajustar a 1px o 3px según el ícono */
+  vertical-align: middle;
+  font-size: 1.2em; /* opcional, para equilibrar visualmente con el texto */
+  padding-right: 1rem;
+}
+
+/* Quedo nice..... :D ....*/
