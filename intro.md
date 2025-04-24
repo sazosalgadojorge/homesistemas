@@ -11,8 +11,8 @@ Bienvenido a la documentación del proyecto.
 Puedes visitar [nuestro sitio](https://ejemplo.com) para más información.
 
 
-<!-- ```js
+```js
 function saludar(nombre) {
   console.log("Hola " + nombre);
 }
-``` -->
+```
