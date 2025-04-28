@@ -14,7 +14,7 @@
 .markdown-docs p,
 .markdown-docs ul,
 .markdown-docs pre {
-  all: unset; /* Resetea todos los estilos heredados si ecesitas */
+  all: unset; /* Resetea todos los estilos heredados si necesitas */
   display: block;
   margin: 1rem 0;
   font-family: "Montserrat", serif;
@@ -54,7 +54,6 @@
     list-style: none;
     padding-left: 0;
 }
-
 
 
 .markdown-docs::-webkit-scrollbar {

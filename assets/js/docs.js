@@ -1,5 +1,4 @@
 // Documentación MD Script
-
 document.querySelectorAll('#navTree a').forEach(link => {
   link.addEventListener('click', async (e) => {
     e.preventDefault();
@@ -29,3 +28,4 @@ enlaces.forEach(link => {
     document.getElementById('docContent').innerHTML = marked.parse(markdown);
   });
 });
+
