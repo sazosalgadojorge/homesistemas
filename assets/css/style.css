@@ -39662,6 +39662,16 @@ th .resizer {
   }
 }
 
+.fi-rr-apps-add {
+  padding-right: 10%;
+  position: relative;
+  top: 2px; /* puedes ajustar a 1px o 3px según el ícono */
+  vertical-align: middle;
+  font-size: 1.4em; /* opcional, para equilibrar visualmente con el texto */
+  padding-right: 1rem;
+  color: #bbd7ff;
+}
+
 /* O específicamente para el contenedor principal */
 .theme-blue3 {
   transition: none !important;

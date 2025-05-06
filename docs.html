@@ -90,30 +90,48 @@
 <!--============================== DOCUMENTACION ==============================-->
 
 <div class="row m-5 markdown-docs">
-     <!-- Árbol de navegación -->
-     <div class="container mt-4 d-block d-md-none" id="select-options">
-        <label for="opciones" class="form-label">Selecciona una opción</label>
-        <select id="opciones" class="form-select">
-          <option value="assets/docs/intro.md" selected>Introducción</option>
-          <option value="assets/docs/contrasena.md">Cambio de contraseña</option>
-          <option value="assets/docs/advanced-topics.md">Temas avanzados</option>
-        </select>
-      </div>
+
+     <!-- Árbol de navegación Phone -->
+        <div class="container mt-4 d-block d-md-none" id="select-options">
+        
+            <label for="opciones" class="form-label">Selecciona una opción
+            </label>
+        
+            <select id="opciones" class="form-select">
+        
+                <option value="/assets/docs/intro.md" selected>Introducción
+                </option>
+        
+                <option value="/assets/docs/contrasena.md">Cambio de contraseña
+                </option>
+        
+                <option value="/assets/docs/advanced-topics.md">Temas avanzados
+                </option>
+        
+        
+            </select>
+        
+        </div>
 
         <!-- Árbol de navegación -->
-    <aside class="col-3 overflow-auto d-none d-md-block" style="height: 70vh; position: sticky; top: 0;" id="navTree">
-        <ul id="navTree" class="row g-3">
-            <li><a href="#" data-doc="assets/docs/intro.md" class="title-markdown"><i class="fi fi-rr-assept-document"></i>Introducción</a></li>
-                <li><a href="#" data-doc="assets/docs/contrasena.md" class="title-markdown"><i class="fi fi-rr-key"></i>Cambio de contraseña</a></li>
-            <li><a href="#" data-doc="assets/docs/advanced-topics.md" class="title-markdown">Temas avanzados</a></li>
-        </ul>
-    </aside>
+        <aside class="col-3 overflow-auto d-none d-md-block" style="height: 70vh; position: sticky; top: 0;" id="navTree">
+            <ul id="navTree" class="row g-3">
+                <li><a href="#" data-doc="/assets/docs/intro.md" class="title-markdown"><i
+                            class="fi fi-rr-assept-document"></i>Introducción</a></li>
+                <li><a href="#" data-doc="/assets/docs/contrasena.md" class="title-markdown"><i class="fi fi-rr-key"></i>Cambio
+                        de contraseña</a></li>
+                <li><a href="#" data-doc="/assets/docs/advanced-topics.md" class="title-markdown">Temas avanzados</a></li>
+            </ul>
+        </aside>
+
         <!-- Contenido -->
-     <main class="flex-1 p-6 col-7 d-none d-md-block">
-        <article id="docContent" class="prose max-w-none" style="max-height: 80vh; overflow-y: auto;">
-            <p>Selecciona un documento del menú.</p>
-        </article>
-    </main>
+
+        <main class="flex-1 p-6 col-7 d-none d-md-block">
+            <article id="docContent" class="prose max-w-none" style="max-height: 80vh; overflow-y: auto;">
+                <p>Selecciona un documento del menú.</p>
+            </article>
+        </main>
+
         <!-- breadcrum -->
 </div>
     
