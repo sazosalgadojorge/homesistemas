@@ -1151,10 +1151,6 @@
 
                     </div>
                     </div>
-                    <button data-slider-prev="#teamSlider7" class="slider-arrow slider-prev"><i
-                            class="far fa-arrow-left"></i></button>
-                    <button data-slider-next="#teamSlider7" class="slider-arrow slider-next"><i
-                            class="far fa-arrow-right"></i></button>
                 </div>
 
             </div>
@@ -1173,7 +1169,7 @@
         <section class="" id="service-sec"
                 data-bg-src="">
                 
-                <div class="container p-5 th-container4">
+                <div class="container p-2 th-container4">
                     <div class="row justify-content-center">
                         <div class="col-lg-6 col-md-7 col-sm-10 px-xl-4">
                             <div class="title-area text-center">
@@ -1185,16 +1181,26 @@
         
                     <div class="slider-area">
                         <div class="swiper th-slider has-shadow" id="serviceSlider17"
-                            data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
+                        data-slider-options='{
+                            "loop": false,
+                            "freeMode": true,
+                            "breakpoints": {
+                              "0": { "slidesPerView": 1 },
+                              "576": { "slidesPerView": 1 },
+                              "768": { "slidesPerView": 2 },
+                              "992": { "slidesPerView": 3 },
+                              "1200": { "slidesPerView": 4 }
+                            }
+                          }'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="service_card6">
                                         <div class="box-icon">
                                             <img src="assets/img/icon/vacaciones.svg" alt="Icon" style="width: 60px; height: 60px;">
                                         </div>
-                                        <h3 class="box-title"><a href="https://api.verfrut.cl/remu" target="_blank">Solicitud de Vacaciones</a></h3>
+                                        <h3 class="box-title"><a href="https://api.verfrut.cl/vacaciones" target="_blank">Solicitud de Vacaciones</a></h3>
                                         <p class="service_card6_text">Nuestra plataforma permite gestionar y solicitar vacaciones de manera rápida y sencilla, asegurando un proceso eficiente y transparente.</p>
-                                        <a href="https://api.verfrut.cl/remu" target="_blank" class="line-btn">Ir al Módulo<i
+                                        <a href="https://api.verfrut.cl/vacaciones" target="_blank" class="line-btn">Ir al Módulo<i
                                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
@@ -1204,9 +1210,9 @@
                                         <div class="box-icon">
                                             <img src="assets/img/icon/rendiciones.svg" alt="Icon" style="width: 64px; height: 64px;">
                                         </div>
-                                        <h3 class="box-title"><a href="service-details.html">Portal de Rendiciones y Otros</a></h3>
+                                        <h3 class="box-title"><a href="https://rendiciones.verfrut.cl/main-materiales-page">Portal de Rendiciones y Otros</a></h3>
                                         <p class="service_card6_text">El portal simplifica la gestión de rendiciones, permitiendo un control eficiente y transparente de gastos e informes.</p>
-                                        <a href="service-details.html" class="line-btn">Ir al Módulo<i
+                                        <a href="https://rendiciones.verfrut.cl/main-materiales-page" class="line-btn">Ir al Módulo<i
                                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
@@ -1216,10 +1222,10 @@
                                         <div class="box-icon">
                                             <img src="assets/img/icon/documentos.svg" alt="Icon" style="width: 64px; height: 64px;">
                                         </div>
-                                        <h3 class="box-title"><a href="https://api.verfrut.cl/Facturacion" target="_blank">Gestión de documentos electrónicos</a>
+                                        <h3 class="box-title"><a href="https://facturacion.verfrut.cl/Account/Login?ReturnUrl=%2f" target="_blank">Gestión de documentos electrónicos</a>
                                         </h3>
                                         <p class="service_card6_text">Nuestra plataforma organiza, almacena y comparte documentos electrónicos garantizando acceso eficiente a la información.</p>
-                                        <a href="https://api.verfrut.cl/Facturacion" target="_blank" class="line-btn">Ir al Módulo<i
+                                        <a href="https://facturacion.verfrut.cl/Account/Login?ReturnUrl=%2f" target="_blank" class="line-btn">Ir al Módulo<i
                                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
@@ -1227,11 +1233,11 @@
                                 <div class="swiper-slide">
                                     <div class="service_card6">
                                         <div class="box-icon">
-                                            <img src="assets/img/icon/intranet.svg" alt="Icon" style="width: 64px; height: 64px;">
+                                            <img src="assets/img/icon/intranet.svg" alt="Icon" style="width: 64px; height: 64px; fill: #2463AE;">
                                         </div>
-                                        <h3 class="box-title"><a href="https://intranet.verfrut.cl" target="_blank">Intranet y Friopacking</a></h3>
-                                        <p class="service_card6_text">La Intranet agiliza procesos internos, conectando a los equipos con eficiencia.</p>
-                                        <a href="https://intranet.verfrut.cl" target="_blank" class="line-btn">Ir al Módulo<i
+                                        <h3 class="box-title"><a href="https://api.verfrut.cl/ctacteenvases" target="_blank">Cuenta Corriente de Envases</a></h3>
+                                        <p class="service_card6_text">Portal para gestionar el ingreso, egreso y saldo de envases.</p>
+                                        <a href="https://api.verfrut.cl/ctacteenvases" target="_blank" class="line-btn">Ir al Módulo<i
                                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
@@ -1247,19 +1253,6 @@
                                                 class="fa-regular fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
-        
-                                <div class="swiper-slide">
-                                    <div class="service_card6">
-                                        <div class="box-icon">
-                                            <img src="assets/img/icon/despaccho.svg" alt="Icon" style="width: 64px; height: 64px;">
-                                        </div>
-                                        <h3 class="box-title"><a href="service-details.html">Despacho de Fruta (Campos)</a></h3>
-                                        <p class="service_card6_text">Nuestra plataforma agiliza y centraliza la gestión del despacho de fruta, asegurando eficiencia y control en cada proceso.</p>
-                                        <a href="service-details.html" class="line-btn">Ir al Módulo<i
-                                                class="fa-regular fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-        
                             </div>
                         </div>
         
@@ -1423,7 +1416,7 @@
 
 </section> -->
 
-<!--============================== Faq Area ==============================-->
+<!--============================== Transformación Digital ==============================-->
 
     <div class="faq-area position-relative overflow-hidden space" id="faq-sec">
             <div class="container th-container4">
@@ -1782,7 +1775,7 @@
 <!--============================== All Js File ============================== -->
 
 
-    <script src="assets/js/header.js"></script>
+   
     <!-- Jquery -->
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <!-- Swiper Slider -->
@@ -1816,7 +1809,10 @@
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
 
-    
+    <script src="assets/js/header.js"></script>
+
+
+
 
 </body>
 
