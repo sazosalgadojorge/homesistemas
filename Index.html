@@ -305,7 +305,7 @@
 
                     <!-- boton -->
                     <div class="btn-group style3">
-                        <a href="/blog.html" class="th-btn text-capitalize">Más información</a>
+                        <a href="blog.html" class="th-btn text-capitalize">Más información</a>
                     </div>
                     
 
@@ -1664,7 +1664,7 @@
                                     <h2 class="newsletter-title text-white">Contáctate <br>con el<br> equipo TI</h2>
                                 </div>
                                 <form class="newsletter-form">
-                                    <input class="form-control" type="email" placeholder="Dirección de Email" required="">
+                                    <input class="form-control" type="email" placeholder="Email" required="">
                                     <button type="submit" class="th-btn">Enviar</button>
                                 </form>
                             </div>
@@ -1764,12 +1764,26 @@
 	******************************** -->
 
     <!-- Scroll To Top -->
+
     <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
                 style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
             </path>
         </svg>
+    </div>
+
+    <!-- Servidores Estados -->
+
+    <div class="position-fixed bottom-0 end-0 p-3 mb-5" style="z-index: 1080">
+        <div id="serverToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+                <div class="toast-body" id="toastMessage">
+                    Servidores operativos al 100%
+                </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
     </div>
 
 <!--============================== All Js File ============================== -->
@@ -1810,6 +1824,7 @@
     <script src="assets/js/main.js"></script>
 
     <script src="assets/js/header.js"></script>
+    <script src="status-servers.js"></script>
 
 
 

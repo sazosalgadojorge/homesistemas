@@ -1,0 +1,65 @@
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    /* .formulario {
+      max-width: 600px;
+      margin: 20px auto;
+    } */
+
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    #preview-area {
+      max-width: 900px;
+      margin: 30px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      min-height: 340px; /* si quieres centrar también verticalmente */
+    }
+    
+    #preview-container svg {
+      max-width: 100%;
+      height: auto;
+    }
+
+
+    /* .text-block {
+      position: relative;
+      left: 380px;
+    } */
+
+    /* #nombre {
+      top: 40px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    #cargo {
+      top: 75px;
+      font-size: 18px;
+    }
+
+    #departamento {
+      top: 100px;
+      font-size: 18px;
+    }
+
+    #direccion { top: 150px; left: 410px; }
+    #correo { top: 180px; left: 410px;}
+    #telefono { top: 210px; left: 410px;}
+    #web { top: 240px; left: 410px;}
+
+    .text-block p {
+      margin: 3px 0;
+      font-size: 14px;
+    } */

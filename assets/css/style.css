@@ -2229,6 +2229,26 @@ textarea.is-invalid {
   border-radius: 8px;
 }
 
+.th-btn-black {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color:#000028;
+  color: var(--white-color);
+  font-family: var(--body-font);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 20.5px 20px;
+  min-width: 144px;
+  border-radius: 8px;
+}
+
 .mo-content {
   border-radius: 20px;
   background-color: #ffffff;
@@ -2244,6 +2264,11 @@ textarea.is-invalid {
 
 .th-btn:hover {
   background-color:#08457a;
+  transition: all 0.3s ease;
+}
+
+.th-btn-black:hover {
+  background-color:#353535;
   transition: all 0.3s ease;
 }
 
@@ -39678,5 +39703,10 @@ th .resizer {
   animation: none !important;
 }
 
+#firma-svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /*# sourceMappingURL=style.css.map */
