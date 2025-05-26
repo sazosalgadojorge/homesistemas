@@ -1,3 +1,4 @@
+<link href="/assets/css/menustyle.css" rel="stylesheet" />
 <!--============================== Header Area ==============================-->
 
 <header class="th-header header-layout17">
@@ -24,13 +25,13 @@
                                 <a href="#">Sistemas Frusys</a>
 
                                 <ul class="sub-menu">
-                                    <li><a href="https://api.verfrut.cl/ctacteenvases" target="_blank">Cuenta Corriente Envases</a></li>
-                                    <li><a href="" target="_blank">Despacho de Fruta (Campo)</a></li>
-                                    <li><a href="https://facturacion.verfrut.cl/Account/Login?ReturnUrl=%2f" target="_blank">Documentos Electrónicos (DTE)</a></li>
-                                    <li><a href="" target="_blank">Intranet Friopacking</a></li>
-                                    <li><a href="https://5.dec.cl" target="_blank">Plataforma DEC 5</a></li>
-                                    <li><a href="https://rendiciones.verfrut.cl" target="_blank">Rendiciones</a></li>
-                                    <li><a href="https://api.verfrut.cl/vacaciones" target="_blank">Vacaciones y Permisos</a></li>
+                                    <li><a href="https://api.verfrut.cl/ctacteenvases" target="_blank"><i class="fi fi-rr-truck-check"></i>Cuenta Corriente Envases</a></li>
+                                    <li><a href="" target="_blank"><i class="fi fi-rr-apple-whole"></i>Despacho de Fruta (Campo)</a></li>
+                                    <li><a href="https://facturacion.verfrut.cl/Account/Login?ReturnUrl=%2f" target="_blank"><i class="fi fi-rr-file"></i>Documentos Electrónicos (DTE)</a></li>
+                                    <li><a href="" target="_blank"><i class="fi fi-rr-house-user"></i>Intranet Friopacking</a></li>
+                                    <li><a href="https://5.dec.cl" target="_blank"><i class="fi fi-rr-chart-user"></i>Plataforma DEC 5</a></li>
+                                    <li><a href="https://rendiciones.verfrut.cl" target="_blank"><i class="fi fi-rr-usd-circle"></i>Rendiciones</a></li>
+                                    <li><a href="https://api.verfrut.cl/vacaciones" target="_blank"><i class="fi fi-rr-umbrella-beach"></i>Vacaciones y Permisos</a></li>
                                 </ul>
 
                             </li>
@@ -48,9 +49,9 @@
                             <li class="menu-item-has-children">
                                 <a href="#">Recursos</a>
                                 <ul class="sub-menu">
-                                    <li><a href="/qa_inicio/docs.html">Ver documentación</a></li>
+                                    <li><a href="docs.html">Ver documentación</a></li>
                                     <li><a href="tutoriales.html">Video Tutoriales</a></li>
-                                    <li><a href="generador-firma.html">Generar Firmas</a></li>
+                                    <li><a href="https://api.verfrut.cl/Home/GeneradorFirma">Generar Firmas</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -63,7 +64,7 @@
                 </div>
                 <div class="col-auto d-none d-xl-inline-block">
                     <div class="header-button">
-                        <a href="https://api.verfrut.cl" class="th-btn style-radius text-capitalize"><i class="fi fi-rr-apps-add" id="iconos-flat"></i>Aplicaciones</a>
+                        <a href="https://api.verfrut.cl" class="th-btn style-radius text-capitalize" data-bs-toggle="modal" data-bs-target="#miModal"><i class="fi fi-rr-apps-add" id="iconos-flat"></i>Aplicaciones</a>
                     </div>
                 </div>
             </div>
@@ -115,9 +116,9 @@
                 <li class="menu-item-has-children">
                     <a href="#">Recursos</a>
                     <ul class="sub-menu">
-                        <li><a href="/qa_inicio/docs.html">Ver documentación</a></li>
+                        <li><a href="docs.html">Ver documentación</a></li>
                         <li><a href="tutoriales.html">Video Tutoriales</a></li>
-                        <li><a href="generador-firma.html">Generar Firmas</a></li>
+                        <li><a href="https://api.verfrut.cl/Home/GeneradorFirma">Generar Firmas</a></li>
                     </ul>
                 </li>
                 <li>
@@ -127,6 +128,79 @@
         </div>
     </div>
 </div>
+
+
+
+
+    <!-- Modal Apps -->
+    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+            <div class="modal-content modal-content-apps">    
+                
+                <!-- Cuerpo del modal con el contenido de las tarjetas -->
+                <div class="modal-body d-flex gap-5">
+
+                    <div class="card-container d-flex justify-content-center gap-4" id="cardContainer">
+                    
+                        <!-- Tarjetas -->
+                        <div class="card p-3" style="min-width: 18rem;">
+                        <img src="/assets/img/iconvacaciones.svg" class="card-img-top" alt="Vacaciones">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Solicitud de Vacaciones</h5>
+                            <p class="card-text">Solicita, gestiona y revisa tus días libres de forma rápida y sencilla.</p>
+                            <a class="th-btn style-radius" target="_blank" href="https://api.verfrut.cl/vacaciones">Ingresar</a>
+                        </div>
+                        </div>
+            
+                        <div class="card p-3" style="min-width: 18rem;">
+                        <img src="/assets/img/icon-dte.svg" class="card-img-top" alt="Documentos">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Documentos Electrónicos</h5>
+                            <p class="card-text">Gestiona tus documentos oficiales de forma rápida y segura.</p>
+                            <a class="th-btn style-radius" target="_blank" href="https://facturacion.verfrut.cl/">Ingresar</a>
+                        </div>
+                        </div>
+            
+                        <div class="card p-3" style="min-width: 18rem;">
+                        <img src="/assets/img/IconRendicion.svg" class="card-img-top" alt="Rendiciones">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Portal de Rendiciones</h5>
+                            <p class="card-text">Envía, revisa y aprueba tus gastos de forma fácil y ordenada.</p>
+                            <a class="th-btn style-radius" target="_blank" href="https://rendiciones.verfrut.cl/">Ingresar</a>
+                        </div>
+                        </div>
+
+                        <div class="card p-3" style="min-width: 18rem;">
+                            <img src="/assets/img/icon-camion.svg" class="card-img-top" alt="Envases">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Cuenta Corriente de Envases</h5>
+                                <p class="card-text text-ajust">Gestiona y consulta tus envases fácilmente.</p>
+                                <a class="th-btn style-radius" target="_blank" href="https://api.verfrut.cl/ctacteenvases">Ingresar</a>
+                            </div>
+                            </div>
+            
+                        <div class="card p-3" style="min-width: 18rem;">
+                        <img src="/assets/img/IconRecoverPass.svg" class="card-img-top" alt="Contraseña">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">¿Olvidaste tu Contraseña?</h5>
+                            <p class="card-text">Gestiona tus credenciales en simples pasos.</p>
+                            <a class="th-btn-black style-radius" target="_blank" href="https://api.verfrut.cl/RecoverPass">Ingresar</a>
+                        </div>
+                        </div>
+ 
+                        <!-- -->
+
+                    </div>
+
+                </div>
+                <button type="button" class="btn-close btn-close-modal" data-bs-dismiss="modal" aria-label="Close">✕</button>
+            </div>
+
+        </div>
+
+    </div>
 
 
 <!--============================== All Js File ============================== -->

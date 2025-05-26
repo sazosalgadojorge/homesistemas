@@ -192,6 +192,11 @@ input:focus {
   box-shadow: none;
 }
 
+input:focus {
+  outline: #ff0000;
+  outline-width: 0,5px;
+}
+
 img:not([draggable]),
 embed,
 object,
@@ -6142,6 +6147,15 @@ a.text-theme:hover,
   position: relative;
   padding-left: 23px;
   text-transform: capitalize;
+  border-radius: 25px;
+}
+
+.fi {
+  position: relative;
+  top: 2px; /* puedes ajustar a 1px o 3px según el ícono */
+  vertical-align: middle;
+  font-size: 1.2em; /* opcional, para equilibrar visualmente con el texto */
+  padding-right: 1rem;
 }
 
 /* .main-menu ul.sub-menu li a:before {
@@ -6263,6 +6277,7 @@ a.text-theme:hover,
   padding: 18px 20px 18px 18px;
   left: -27px;
   margin-top: 15px;
+  border-radius: 10px;
 }
 
 .header-button {
@@ -6965,6 +6980,7 @@ a.text-theme:hover,
     align-items: center;
   }
 }
+
 
 /* @media (max-width: 1300px) {
   .titulo-sm {
