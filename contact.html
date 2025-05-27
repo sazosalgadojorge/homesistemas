@@ -75,7 +75,7 @@
     <div class="container-fluid pt-3" id="Titulo">
         <div class="row p-3 justify-content-center">
             <div class="col justify-content-center">
-                <h1 class="justify-content-center fs-1">Contacto</h1>
+                <h1 class="justify-content-center fs-1">Personal de Turno</h1>
             </div>
         </div>
     </div>
@@ -93,7 +93,7 @@
                         <div class="contact-info_icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <div class="media-body">
+                        <div class="media-body" id="turnoDesarrollo">
                             <h4 class="box-title">Turno - Area de Desarrollo</h4>
                             <span class="contact-info_text">
                                 <a>Claudio Vasquez</a> <!-- Nombre -->
@@ -339,10 +339,55 @@
         })();
     </script>
 
-    <script src="contact.js"></script>
-
     <!-- Header -->
     <script src="assets/js/header.js"></script>
+
+    <script>
+        // Cargar los datos de turnos.json para Desarrollo
+        fetch('assets/json/turnos.json')
+          .then(response => response.json())
+          .then(data => {
+            const semanaActual = new Date().getWeek();
+            const turnoDesarrollo = data.find(t => t.semana === semanaActual && t.area === "Desarrollo");
+      
+            if (turnoDesarrollo) {
+              document.getElementById('turnoDesarrollo').innerHTML = `
+                <h3 style="font-size: 25px">Turno - Área de Desarrollo</h3>
+                <p style="font-size: 20px">${turnoDesarrollo.responsable}</p>
+                <p style="font-size: 20px">${turnoDesarrollo.telefono}</p>
+              `;
+            } else {
+              document.getElementById('turnoDesarrollo').innerHTML = '<p>No hay turno asignado</p>';
+            }
+          });
+      
+        // Cargar los datos de turnos-soporte.json para Soporte Técnico
+        fetch('assets/json/turnos-soporte.json')
+          .then(response => response.json())
+          .then(data => {
+            const semanaActual = new Date().getWeek();
+            const turnoSoporte = data.find(t => t.semana === semanaActual && t.area === "Soporte Técnico");
+      
+            if (turnoSoporte) {
+              document.getElementById('turnoSoporte').innerHTML = `
+                <h3>Turno - Soporte Técnico</h3>
+                <p>${turnoSoporte.responsable}</p>
+                <p>${turnoSoporte.telefono}</p>
+              `;
+            } else {
+              document.getElementById('turnoSoporte').innerHTML = '<p>No hay turno asignado</p>';
+            }
+          });
+      
+        // Extensión para obtener la semana del año
+        Date.prototype.getWeek = function() {
+          const date = new Date(this.getTime());
+          date.setHours(0, 0, 0, 0);
+          date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
+          const week1 = new Date(date.getFullYear(), 0, 4);
+          return 1 + Math.round(((date - week1) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
+        }
+      </script>
 
 </body>
 
