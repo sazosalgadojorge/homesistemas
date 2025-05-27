@@ -6981,6 +6981,10 @@ a.text-theme:hover,
   }
 }
 
+#miModal {
+  backdrop-filter: blur(4px);
+}
+
 
 /* @media (max-width: 1300px) {
   .titulo-sm {
@@ -17794,11 +17798,14 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  gap: 25px;
+  gap: 40px;
   box-shadow: 0px 4px 30px rgba(8, 14, 28, 0.08);
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: var(--white-color);
-  padding: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
 }
 
 .contact-info .box-title {
@@ -17817,7 +17824,7 @@ span.select2-selection.select2-selection--single:focus {
   font-size: 40px;
   position: relative;
   box-shadow: 0px 6px 20px rgba(0, 96, 255, 0.6);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .contact-info_text {

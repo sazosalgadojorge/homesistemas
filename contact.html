@@ -82,8 +82,24 @@
 
     <!--============================== Contacto ==============================-->
 
-    <div class="mt-5 pt-5 mb-5 pb-5">
+    <div class="container">
+        <div class="row">
+        <div class="col-xxl-12 col-lg-12">
+            <h3 class="h4 mt-40 mb-5">🛠️ ¿Cómo funcionan los turnos de soporte y sistemas?</h3>
+                <p>Los turnos de soporte y sistemas están pensados para que
+                siempre tengas ayuda disponible en ciertos días y horarios
+                (puedes verlos aquí mismo). Durante estos turnos, el equipo técnico hará
+                lo posible para resolver cualquier problema en el menor tiempo. Te pedimos que
+                revises los horarios y respetes los turnos establecidos para que podamos atenderte
+                mejor y coordinar de forma más rápida entre todas las áreas.</p>
+        </div>
+    </div>
+    </div>
+    
+
+    <div class="mb-5 pb-5">
         <div class="container">
+            <h3 class="h4 pb-5 mt-40">🔎 ¿A quién contactar esta semana?</h3>
             <div class="row gy-4">
 
                 <!-- Turno - Area de Desarrollo -->
@@ -352,7 +368,7 @@
       
             if (turnoDesarrollo) {
               document.getElementById('turnoDesarrollo').innerHTML = `
-                <h3 style="font-size: 25px">Turno - Área de Desarrollo</h3>
+                <h3 style="font-size: 25px">Área de Desarrollo</h3>
                 <p style="font-size: 20px">${turnoDesarrollo.responsable}</p>
                 <p style="font-size: 20px">${turnoDesarrollo.telefono}</p>
               `;
@@ -370,7 +386,7 @@
       
             if (turnoSoporte) {
               document.getElementById('turnoSoporte').innerHTML = `
-                <h3>Turno - Soporte Técnico</h3>
+                <h3>Soporte Técnico</h3>
                 <p>${turnoSoporte.responsable}</p>
                 <p>${turnoSoporte.telefono}</p>
               `;

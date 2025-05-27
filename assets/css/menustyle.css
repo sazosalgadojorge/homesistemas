@@ -11,6 +11,7 @@
   outline: 0;
 }
 
+
 .modal-custom {
   margin: 0;
   display: flex;
@@ -141,6 +142,13 @@
   }
 }
 
+@media (max-width: 1534px) {
+  #cardContainer {
+    transform: scale(0.9); /* 80% del tamaño original */
+    align-items: center;
+  }
+}
+
 .btn-close-modal {
   color: #fff;
   font-size: 30px;
@@ -151,3 +159,4 @@
 .btn-close-modal:hover {
   color: #fff;
 }
+
