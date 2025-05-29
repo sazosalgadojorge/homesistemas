@@ -20387,7 +20387,7 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 
-.hover-phone {
+/* .hover-phone {
   transition: 1s;
 }
 
@@ -20401,7 +20401,36 @@ span.select2-selection.select2-selection--single:focus {
 
 .hover-mac:hover {
   transform: scale(1.1);
+} */
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
+
+/* Phone primero */
+.hover-phone {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: aparecer 0.5s ease forwards;
+  transition: transform 0.5s; /* Hover más suave */
+}
+
+/* Mac después, con delay */
+.hover-mac {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: aparecer 0.5s ease forwards;
+  animation-delay: 0.5s; /* Empieza después de phone */
+  transition: transform 0.5s; /* Hover más suave */
+}
+
 
 .about16-year-counter {
   display: -webkit-box;
