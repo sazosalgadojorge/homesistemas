@@ -125,19 +125,14 @@
                  
                 <div class="col-xl-6 col-md-6">
                     <div class="contact-info">
-                        <div class="contact-info_icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="box-title">Turno - Soporte Técnico</h4>
-                            <span class="contact-info_text">
-                                <a>Erick Olguin</a> <!-- Nombre -->
-                                <a href="tel:+65485965789">+56 9 88776655</a>
-                            </span>
-                        </div>
+                      <div class="contact-info_icon">
+                        <i class="fas fa-phone"></i>
+                      </div>
+                      <div class="media-body" id="turnoSoporte">
+                      
+                      </div>
                     </div>
-                </div>
-
+                  </div>
                 <!-- -->
 
             </div>
@@ -377,18 +372,18 @@
             }
           });
       
-        // Cargar los datos de turnos-soporte.json para Soporte Técnico
-        fetch('assets/json/turnos-soporte.json')
+        // Cargar los datos de turnos_soporte.json para Soporte Técnico
+        fetch('assets/json/turnos_sistemas.json')
           .then(response => response.json())
           .then(data => {
             const semanaActual = new Date().getWeek();
-            const turnoSoporte = data.find(t => t.semana === semanaActual && t.area === "Soporte Técnico");
+            const turnoSoporte = data.find(t => t.semana === semanaActual && t.area === "Sistemas");
       
             if (turnoSoporte) {
               document.getElementById('turnoSoporte').innerHTML = `
-                <h3>Soporte Técnico</h3>
-                <p>${turnoSoporte.responsable}</p>
-                <p>${turnoSoporte.telefono}</p>
+                <h3 style="font-size: 25px">Soporte Técnico</h3>
+                <p style="font-size: 20px">${turnoSoporte.responsable}</p>
+                <p style="font-size: 20px">${turnoSoporte.telefono}</p>
               `;
             } else {
               document.getElementById('turnoSoporte').innerHTML = '<p>No hay turno asignado</p>';

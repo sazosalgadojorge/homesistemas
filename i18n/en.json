@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "title": "Welcome to systems & support.",
+    "subtitle": "We manage Verfrut's technological infrastructure with cutting-edge solutions that drive efficiency and continuous growth.",
+    "incidencias_button": "Incidents",
+    "apps_button": "Apps",
+    "marcas_title": "Our Technologies"
+  },
+  "faq": {
+    "section_title": "The Importance of Developing New Technologies",
+    "item1_title": "Innovation and Competitiveness",
+    "item1_text": "Developing new technologies enables companies to remain competitive in constantly changing markets. Technological innovation facilitates the creation of differentiated products and services that attract customers and enhance the user experience. It also positions the company as a leader in its industry by leveraging the latest trends and available tools.",
+    "item2_title": "Improvement of Operational Efficiency",
+    "item2_text": "The implementation of advanced technologies automates repetitive tasks, optimizes internal processes, and reduces costs. This allows teams to focus on strategic activities while the company operates faster and more efficiently. From management software to artificial intelligence, technology has a positive impact on productivity.",
+    "item3_title": "Sustainability and Social Responsibility",
+    "item3_text": "The development of technologies drives sustainability in the fruit production process. This includes reducing the use of resources, minimizing waste, and ensuring more responsible environmental management. These practices not only benefit the environment but also meet the expectations of international markets that value sustainability.",
+    "item4_title": "Adaptation to the Future of the Fruit Market",
+    "item4_text": "Technological development helps companies face the future challenges of the sector, such as changes in demand, stricter international regulations, and the need for greater transparency in processes. Being prepared to adapt to these demands ensures that Chilean companies continue to lead in fruit exports worldwide.",
+    "incidencias_title": "How to properly report an incident? Here we tell you.",
+    "incidencias_text": "Learn how to clearly and effectively report any technical incident you find. Follow these steps and help our support team assist you quickly. 🚀✨",
+    "incidencias_button": "See more"
+  },
+  "about": {
+    "subtitle": "Innovation",
+    "title": "Verfrut Cloud: The key to optimizing the fruit process in Verfrut Chile and Peru",
+    "text": "Verfrut Cloud is our technological solution that modernizes an old ERP, transforming it into a web platform to optimize processes, simplify its use, and improve fruit management.",
+    "collab_text1": "Of productivity in our collaborators.",
+    "collab_text2": "Easier with a user-centered approach.",
+    "button": "More information"
+  },
+  "frutapp": {
+    "subtitle": "Solutions",
+    "title": "FrutApp: The comprehensive solution to manage your fruit process",
+    "text": "FrutApp is our innovative application designed to optimize and simplify the management of different key modules in the fruit process. With an intuitive and functional interface, FrutApp allows users to access specific tools for each stage of the process, improving productivity and ensuring efficient information management."
+  },
+  "phishing": {
+    "title": "Beware of the hook: Everything you need to know about phishing",
+    "text": "Phishing is a scam where cybercriminals impersonate legitimate entities to steal personal data, such as passwords or banking information, through fake messages or websites.",
+    "button": "Watch Video"
+  },
+  "incidencias": {
+    "title": "How to properly report an incident? Here we tell you.",
+    "text": "Learn how to clearly and effectively report any technical incident you find. Follow these steps and help our support team assist you quickly. 🚀✨",
+    "button": "See more"
+  },
+  "contacto": {
+    "title": "Contact the IT team",
+    "send_button": "Send"
+  },
+  "footer": {
+    "chile_title": "Chile",
+    "peru_title": "Peru"
+  },
+  "others": {
+    "rendiciones_title": "Reports and Others Portal",
+    "rendiciones_text": "The portal simplifies expense reports management, allowing efficient and transparent control of expenses and reports.",
+    "rendiciones_button": "Go to Module"
+  },
+  "team": {
+    "subtitle": "Technology experts",
+    "title": "Our IT Team"
+  },
+  "brand": {
+    "title": "Our Technologies"
+  }
+}

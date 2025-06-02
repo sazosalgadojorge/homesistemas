@@ -160,3 +160,15 @@
   color: #fff;
 }
 
+.disabled {
+  color: #d0d0d0;       /* Color gris para indicar desactivado */
+  cursor: not-allowed; /* Cursor de "no permitido" */
+  pointer-events: none; /* Desactiva la interacción del mouse */
+  opacity: 0.5;      /* Hace que se vea menos destacado */
+  position: relative; /* Necesario para el tooltip */
+}
+
+.disabled {
+  pointer-events: none; /* No permitir click */
+  opacity: 0.6;
+}

@@ -70,6 +70,9 @@
 
 <!--========= Header (acá se renderiza encabezado) =========-->
 
+<!-- <button id="btn-es">Español</button>
+<button id="btn-en">English</button> -->
+
     <div id="header-area">   
     </div>
 
@@ -81,8 +84,8 @@
                 <!-- Left Column -->
                 <div class="col-lg-4 d-flex flex-column justify-content-top titulo-sm" style="padding-top:8%;">
                     <!-- Title and Subtitle -->
-                    <h1 class="w-75 lh-1 titulo-bienvenido">Bienvenido a sistemas & soporte.</h1>
-                    <p class="text-white w-75 lh-base fs-5 pb-3 subtitulo-bienvenido">
+                    <h1 class="w-75 lh-1 titulo-bienvenido" id="titulo-bienvenido">Bienvenido a sistemas & soporte.</h1>
+                    <p class="text-white w-75 lh-base fs-5 pb-3 subtitulo-bienvenido" id="subtitulo-bienvenido">
                         Gestionamos la infraestructura tecnológica de Verfrut con soluciones vanguardistas que impulsan la eficiencia
                         el crecimiento continuo.
                     </p>
@@ -92,7 +95,7 @@
                             data-bs-toggle="modal" 
                             data-bs-target="#exampleModal" 
                             style="font-size: 18px;">
-                        <span>Incidencias</span>
+                        <span id="btn-incidencias">Incidencias</span>
                         <i class="fi fi-rr-arrow-up-right pt-1"></i>
                     </button>
 
@@ -100,7 +103,7 @@
                             class="col-6 th-btn style-radius text-capitalize d-flex align-items-center justify-content-center gap-3 mt-4 d-block d-md-none" 
                             data-bs-toggle="modal" data-bs-target="#miModal"
                             style="font-size: 18px;">
-                        <span>Apps</span>
+                        <span id="btn-apps">Apps</span>
                         <i  class="fi fi-rr-apps-add"
                             id="iconos-flat"></i>
                     </button>
@@ -160,7 +163,7 @@
                     </div>
         
                     <div class="col-8 d-flex justify-content-start align-items-center">
-                        <h3 class="brand-title9"> Nuestras Tecnologías</h3>
+                        <h3 class="brand-title9" id="marcas-title">Nuestras Tecnologías</h3>
                     </div>
                 </div>
             </div>
@@ -169,64 +172,64 @@
                 <div class="swiper th-slider brand-slider4" id="brandSlider4" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4"},"1200":{"slidesPerView":"5"},"1400":{"slidesPerView":"6"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/entel.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/azure.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/microsoft.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/starlink.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/bitdefender.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/unitec.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/entel.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/azure.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/microsoft.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/starlink.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/bitdefender.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box">
+                            <div class="brand-box">
                                 <img src="assets/img/brand/unitec.png" alt="Brand Logo">
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -272,12 +275,12 @@
             <div class="row">
                 <div class="col-xl-6">
                     <div class="title-area mb-35">
-                        <span class="sub-title">Innovación</span>
-                        <h2 class="sec-title" style="text-transform: none;">Verfrut Cloud: La clave para optimizar el proceso de la fruta en Verfrut
+                        <span class="sub-title" id="about-subtitle">Innovación</span>
+                        <h2 class="sec-title" style="text-transform: none;" id="about-title">Verfrut Cloud: La clave para optimizar el proceso de la fruta en Verfrut
                             Chile y Perú
                         </h2>
                     </div>
-                    <p class="mt-n2 mb-25">Verfrut Cloud es nuestra solución tecnológica que moderniza un antiguo ERP,
+                    <p class="mt-n2 mb-25" id="about-text">Verfrut Cloud es nuestra solución tecnológica que moderniza un antiguo ERP,
                         transformándolo en una plataforma web para optimizar procesos, simplificar su uso y mejorar la
                         gestión de la fruta.</p>
 
@@ -345,7 +348,7 @@
 
                     <!-- boton -->
                     <div class="btn-group style3">
-                        <a href="blog.html" class="th-btn text-capitalize">Más información</a>
+                        <a href="blog.html" class="th-btn text-capitalize" id="about-button">Más información</a>
                     </div>
                     
 
@@ -420,7 +423,7 @@
                     <div class="col-xl-6">
                         <div class="feature9-content pe-xl-5">
                             <h1 class="sec-title fs-1 mb-20" style="color: #080E1C; text-transform: none;">Cuidado con el anzuelo: Todo lo que
-                                debes saber sobre el Pishing</h1>
+                                debes saber sobre el phishing</h1>
                             <p class="mb-40">El phishing es un fraude donde ciberdelincuentes imitan a entidades legítimas
                                 para robar datos personales, como contraseñas o información bancaria, mediante mensajes o
                                 sitios web falsos.</p>
@@ -504,7 +507,7 @@
                                     <div class="team-content">
 
                                         <div class="media-body">
-                                            <h3 class="box-title"><a href="team-details.html">Miguel Vargas</a></h3>
+                                            <h3 class="box-title"><a href="team-details.html">Miguel Ángel Vargas</a></h3>
                                             <span class="team-desig">Gerencia TI</span>
                                         </div>
                                     </div>
@@ -526,7 +529,7 @@
                                     <div class="team-content">
 
                                         <div class="media-body">
-                                            <h3 class="box-title"><a href="team-details.html">Erick Oguín Osorio</a></h3>
+                                            <h3 class="box-title"><a href="team-details.html">Erick Olguín Osorio</a></h3>
                                             <span class="team-desig">Sub-Gerente de Soporte y Seguridad Informatica</span>
                                         </div>
                                     </div>
@@ -923,7 +926,7 @@
 
                                         <div class="media-body">
                                             <h3 class="box-title"><a href="team-details.html">Anthony Guzmán</a></h3>
-                                            <span class="team-desig">Dedes o Infraestructura TI</span>
+                                            <span class="team-desig">Supervisor de redes e infraestructura </span>
                                         </div>
                             </div>
                             </div>
@@ -1722,6 +1725,8 @@
     <script src="status-servers.js"></script>
     <!-- ? -->
     <script src="assets/js/egg.js"></script>
+    <!-- Script -->
+    <script src="assets/js/script-multilang.js"></script>
 
 
 </body>

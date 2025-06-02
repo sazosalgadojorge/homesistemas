@@ -38,7 +38,7 @@
         
           // Mensaje de Mario
           const mensaje = document.createElement("p");
-          mensaje.textContent = "¡Super Mario te saluda! 🍄✨";
+          mensaje.textContent = "¡Te ganaste el whiskey! 🍺✨";
           mensaje.style.fontSize = "1.5rem";
           mensaje.style.color = "#d01000";
           mensaje.style.marginBottom = "10px";

@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "title": "Bienvenido a sistemas & soporte.",
+    "subtitle": "Gestionamos la infraestructura tecnológica de Verfrut con soluciones vanguardistas que impulsan la eficiencia el crecimiento continuo.",
+    "incidencias_button": "Incidencias",
+    "apps_button": "Apps",
+    "marcas_title": "Nuestras Tecnologías"
+  },
+  "faq": {
+    "section_title": "La Importancia de Desarrollar Nuevas Tecnologías",
+    "item1_title": "Innovación y Competitividad",
+    "item1_text": "Desarrollar nuevas tecnologías permite a las empresas mantenerse competitivas en mercados en constante cambio. La innovación tecnológica facilita la creación de productos y servicios diferenciados que atraen a clientes y mejoran la experiencia del usuario. Además, posiciona a la empresa como líder en su industria al aprovechar las últimas tendencias y herramientas disponibles.",
+    "item2_title": "Mejora de la Eficiencia Operativa",
+    "item2_text": "La implementación de tecnologías avanzadas automatiza tareas repetitivas, optimiza procesos internos y reduce costos. Esto permite a los equipos concentrarse en actividades estratégicas, mientras que la empresa opera de manera más rápida y eficiente. Desde software de gestión hasta inteligencia artificial, la tecnología impacta positivamente la productividad.",
+    "item3_title": "Sostenibilidad y Responsabilidad Social",
+    "item3_text": "El desarrollo de tecnologías impulsa la sostenibilidad en el proceso de producción de fruta. Esto incluye reducir el uso de recursos, minimizar los desechos y garantizar un manejo más responsable con el medio ambiente. Estas prácticas no solo benefician al entorno, sino que también responden a las expectativas de mercados internacionales que valoran la sostenibilidad.",
+    "item4_title": "Adaptación al Futuro del Mercado Frutícola",
+    "item4_text": "El desarrollo tecnológico ayuda a las empresas a enfrentar los retos futuros del sector, como cambios en la demanda, regulaciones internacionales más estrictas y la necesidad de una mayor transparencia en los procesos. Estar preparados para adaptarse a estas exigencias asegura que las empresas chilenas sigan liderando en la exportación de frutas a nivel mundial.",
+    "incidencias_title": "¿Cómo realizar una incidencia correctamente? Aquí te lo contamos.",
+    "incidencias_text": "Aprende cómo reportar de forma clara y efectiva cualquier incidencia técnica que encuentres. Sigue estos pasos y ayuda a que nuestro equipo de soporte te atienda rápidamente. 🚀✨",
+    "incidencias_button": "Ver más"
+  },
+  "about": {
+    "subtitle": "Innovación",
+    "title": "Verfrut Cloud: La clave para optimizar el proceso de la fruta en Verfrut Chile y Perú",
+    "text": "Verfrut Cloud es nuestra solución tecnológica que moderniza un antiguo ERP, transformándolo en una plataforma web para optimizar procesos, simplificar su uso y mejorar la gestión de la fruta.",
+    "collab_text1": "De productividad en nuestros colaboradores.",
+    "collab_text2": "Más fácil con un enfoque centrado en el usuario.",
+    "button": "Más información"
+  },
+  "frutapp": {
+    "subtitle": "Soluciones",
+    "title": "FrutApp: La solución integral para gestionar tu proceso frutícola",
+    "text": "FrutApp es nuestra innovadora aplicación diseñada para optimizar y simplificar la gestión de distintos módulos clave en el proceso frutícola. Con una interfaz intuitiva y funcional, FrutApp permite a los usuarios acceder a herramientas específicas para cada etapa del proceso, mejorando la productividad y garantizando un manejo eficiente de la información."
+  },
+  "phishing": {
+    "title": "Cuidado con el anzuelo: Todo lo que debes saber sobre el Pishing",
+    "text": "El phishing es un fraude donde ciberdelincuentes imitan a entidades legítimas para robar datos personales, como contraseñas o información bancaria, mediante mensajes o sitios web falsos.",
+    "button": "Ver Video"
+  },
+  "incidencias": {
+    "title": "¿Cómo realizar una incidencia correctamente? Aquí te lo contamos.",
+    "text": "Aprende cómo reportar de forma clara y efectiva cualquier incidencia técnica que encuentres. Sigue estos pasos y ayuda a que nuestro equipo de soporte te atienda rápidamente. 🚀✨",
+    "button": "Ver más"
+  },
+  "contacto": {
+    "title": "Contáctate con el equipo TI",
+    "send_button": "Enviar"
+  },
+  "footer": {
+    "chile_title": "Chile",
+    "peru_title": "Perú"
+  },
+  "others": {
+    "rendiciones_title": "Portal de Rendiciones y Otros",
+    "rendiciones_text": "El portal simplifica la gestión de rendiciones, permitiendo un control eficiente y transparente de gastos e informes.",
+    "rendiciones_button": "Ir al Módulo"
+  },
+  "team": {
+    "subtitle": "Expertos en tecnologías",
+    "title": "Nuestro Equipo TI"
+  },
+  "brand": {
+    "title": "Nuestras Tecnologías"
+  }
+}
