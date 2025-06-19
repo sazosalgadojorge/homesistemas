@@ -6135,17 +6135,28 @@ a.text-theme:hover,
   display: block;
   margin: 0 0;
   padding: 0px 9px;
+  
+}
+
+.badge-nueva {
+  background-color: #28a745;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 6px;
 }
 
 .main-menu ul.sub-menu li.menu-item-has-children > a:after {
   content: "\f105";
   float: right;
   top: 1px;
+  margin-left: 20px;
 }
 
 .main-menu ul.sub-menu li a {
   position: relative;
-  padding-left: 23px;
   text-transform: capitalize;
   border-radius: 25px;
 }
@@ -6181,6 +6192,7 @@ a.text-theme:hover,
   top: 0;
   margin: 0 0;
   margin-left: 20px;
+  
 }
 
 .main-menu ul.sub-menu li ul.sub-menu li ul {
