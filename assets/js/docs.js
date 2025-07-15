@@ -101,7 +101,7 @@ const index = new FlexSearch.Document({
   tokenize: "forward",
   document: {
     id: "file",
-    index: ["title", "content", "label"], // incluimos 'label'
+    index: ["title", "content", "label"],
   },
 });
 
@@ -114,7 +114,7 @@ const searchResults = document.getElementById("searchResults");
 function normalizeText(text) {
   return text
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "") // elimina acentos
+    .replace(/[\u0300-\u036f]/g, "")
     .replace(/ñ/g, "n")
     .replace(/Ñ/g, "n")
     .toLowerCase();
@@ -177,6 +177,7 @@ searchInput.addEventListener("input", async (e) => {
     const li = document.createElement("li");
     li.className = "list-group-item list-group-item-action";
     li.innerHTML = doc.linkLabel; // mostrar el mismo texto que el menú
+    li.classList.add('lista-estilo');
 
     // Al hacer clic en el resultado, simular clic real del menú
     li.addEventListener("click", () => {

@@ -72,7 +72,6 @@
             </div>
          </div>
       </div>
-
       
       <!-- Area de documentación -->
 
@@ -81,8 +80,9 @@
             <div class="input-group mb-3">
                <input type="text" id="searchInput" class="form-control" placeholder="Buscar documentación..." />
             </div>
-            <ul id="searchResults" class="list-group position-absolute"
-               style="z-index: 1000; border-radius: 5px; padding: 5px; width: 100%; left: 0; right: 0;"></ul>
+            <ul id="searchResults" class="list-group position-absolute list-style"
+               style="z-index: 1000; border-radius: 5px; padding: 5px; width: 100%; left: 0; right: 0;">
+            </ul>
             <div id="docContentMobile" class="prose max-w-none mt-4 d-block d-md-none"></div>
          </div>
          <!-- Árbol de navegación Phone -->
@@ -297,7 +297,20 @@
       <script src="assets/js/main.js"></script>
       <!-- js contenido -->
       <script src="assets/js/docs.js"></script>
+
       <style>
+         
+         .lista-estilo {
+            background-color: #fbfbfb;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+         }
+         
+         .lista-estilo:hover {
+            background-color: #f4f4f4;
+            color: #000000;
+         }
+
          #searchResults {
          margin-top: 0px;
          width: 90%;
@@ -305,6 +318,8 @@
          left: 0;
          right: 0;
          }
+
       </style>
+
    </body>
 </html>
