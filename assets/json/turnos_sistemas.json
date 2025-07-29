@@ -1,182 +1,314 @@
 [
-    {
-        "semana": 23,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 24,
-        "responsable": "Isaac Vilches",
-        "telefono": "+56995430194",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 25,
-        "responsable": "Mario Garrido",
-        "telefono": "+56990880926",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 26,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 27,
-        "responsable": "Felipe Henriquez",
-        "telefono": "+56961157048",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 28,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 29,
-        "responsable": "Isaac Vilches",
-        "telefono": "+56995430194",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 30,
-        "responsable": "Mario Garrido",
-        "telefono": "+56990880926",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 31,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 32,
-        "responsable": "Felipe Henriquez",
-        "telefono": "+56961157048",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 33,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 34,
-        "responsable": "Isaac Vilches",
-        "telefono": "+56995430194",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 35,
-        "responsable": "Mario Garrido",
-        "telefono": "+56990880926",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 36,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 37,
-        "responsable": "Felipe Henriquez",
-        "telefono": "+56961157048",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 38,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 39,
-        "responsable": "Isaac Vilches",
-        "telefono": "+56995430194",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 40,
-        "responsable": "Mario Garrido",
-        "telefono": "+56990880926",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 41,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 42,
-        "responsable": "Felipe Henriquez",
-        "telefono": "+56961157048",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 43,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 44,
-        "responsable": "Isaac Vilches",
-        "telefono": "+56995430194",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 45,
-        "responsable": "Mario Garrido",
-        "telefono": "+56990880926",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 46,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 47,
-        "responsable": "Felipe Henriquez",
-        "telefono": "+56961157048",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 48,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 49,
-        "responsable": "Isaac Vilches",
-        "telefono": "+56995430194",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 50,
-        "responsable": "Mario Garrido",
-        "telefono": "+56990880926",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 51,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
-        "area": "Sistemas"
-    },
-    {
-        "semana": 52,
-        "responsable": "Felipe Henriquez",
-        "telefono": "+56961157048",
-        "area": "Sistemas"
-    }
+  {
+    "semana": 1,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 2,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 3,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 4,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 5,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 6,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 7,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 8,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 9,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 10,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 11,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 12,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 13,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 14,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 15,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 16,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 17,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 18,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 19,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 20,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 21,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 22,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 23,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 24,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 25,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 26,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 27,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 28,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 29,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 30,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 31,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 32,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 33,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 34,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 35,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 36,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 37,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 38,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 39,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 40,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 41,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 42,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 43,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 44,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 45,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 46,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 47,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 48,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  },
+  {
+    "semana": 49,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
+  },
+  {
+    "semana": 50,
+    "area": "Desarrollo",
+    "responsable": "Benjamín López",
+    "telefono": "+56961656462"
+  },
+  {
+    "semana": 51,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
+  },
+  {
+    "semana": 52,
+    "area": "Desarrollo",
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
+  }
 ]

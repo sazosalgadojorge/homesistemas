@@ -106,18 +106,14 @@
 
                 <div class="col-xl-6 col-md-6">
                     <div class="contact-info">
-                        <div class="contact-info_icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="media-body" id="turnoDesarrollo">
-                            <h4 class="box-title">Turno - Area de Desarrollo</h4>
-                            <span class="contact-info_text">
-                                <a>Claudio Vasquez</a> <!-- Nombre -->
-                                <a href="tel:+65485965789">+56 9 88776655</a> <!-- Telefono -->
-                            </span>
-                        </div>
+                      <div class="contact-info_icon">
+                        <i class="fas fa-phone"></i>
+                      </div>
+                      <div class="media-body" id="turnoDesarrollo">
+                      
+                      </div>
                     </div>
-                </div>
+                  </div>
                 
                 <!-- -->
                 
@@ -355,7 +351,7 @@
 
     <script>
         // Cargar los datos de turnos.json para Desarrollo
-        fetch('assets/json/turnos.json')
+        fetch('assets/json/turnos_sistemas.json')
           .then(response => response.json())
           .then(data => {
             const semanaActual = new Date().getWeek();
@@ -373,7 +369,7 @@
           });
       
         // Cargar los datos de turnos_soporte.json para Soporte Técnico
-        fetch('assets/json/turnos_sistemas.json')
+        fetch('assets/json/turnos_soporte.json')
           .then(response => response.json())
           .then(data => {
             const semanaActual = new Date().getWeek();
