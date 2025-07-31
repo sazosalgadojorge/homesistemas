@@ -3284,25 +3284,6 @@ hr.title-line {
           flex: 1;
 }
 
-.badge {
-  position: absolute;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: inline-block;
-  text-align: center;
-  background-color: var(--theme-color);
-  color: var(--white-color);
-  padding: 0.25em 0.45em;
-  font-size: 0.7em;
-  border-radius: 50%;
-  top: 8px;
-  right: 8px;
-  font-weight: 400;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
 .th-social a {
   display: inline-block;
   width: var(--icon-size, 46px);
@@ -6138,15 +6119,6 @@ a.text-theme:hover,
   
 }
 
-.badge-nueva {
-  background-color: #28a745;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-size: 10px;
-  font-weight: bold;
-  margin-left: 6px;
-}
 
 .main-menu ul.sub-menu li.menu-item-has-children > a:after {
   content: "\f105";
