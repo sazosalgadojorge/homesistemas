@@ -1,0 +1,412 @@
+/* =================================
+   ESTILOS COMPLETOS PARA SECCIÓN DE MARCAS
+   ================================= */
+
+/* =================================
+   SECCIÓN PRINCIPAL DE MARCAS
+   ================================= */
+
+.brand-sec4 {
+  /* Estilos base de la sección */
+  position: relative;
+  overflow: hidden;
+  padding: 3rem;
+}
+
+/* =================================
+   TÍTULO DE LA SECCIÓN
+   ================================= */
+
+.brand-title9 {
+  /* Estilos del título principal */
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 0;
+}
+
+.brand-title9 span {
+  display: inline-block;
+  position: relative;
+  color: var(--theme-color);
+}
+
+.brand-title9 span:after {
+  content: "";
+  height: 15px;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='215' height='19' viewBox='0 0 215 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 16.9999C37.6667 5.9999 129.8 -9.4001 213 16.9999' stroke='%23407360' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  animation: titleFill 3s linear infinite;
+}
+
+/* =================================
+   ÁREA DEL SLIDER
+   ================================= */
+
+.slider-area {
+  position: relative;
+  text-align: center;
+}
+
+/* =================================
+   SLIDER DE MARCAS
+   ================================= */
+
+.brand-slider4 {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #D3D3E7;
+}
+
+/* =================================
+   CAJAS DE MARCAS
+   ================================= */
+
+.brand-box {
+  /* Estilos base para las cajas de marcas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  transition: all 0.4s ease-in-out;
+}
+
+.brand-box img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0.9);
+}
+
+.brand-box:hover img {
+  transform: scale(1);
+}
+
+/* Variantes de cajas de marcas */
+.brand-box.style4 {
+  background-color: var(--white-color);
+  border: 1px solid #EDF0F4;
+  border-radius: 20px;
+  padding: 30px 40px;
+  width: 240px;
+  height: 90px;
+  display: block;
+  margin: auto;
+}
+
+.brand-box1-1 {
+  border-radius: 20px;
+  border: 1px solid #EDF0F4;
+  background: linear-gradient(180deg, #EDF0F4 0%, rgba(237, 240, 244, 0) 100%);
+  display: grid;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 90px;
+  transition: 0.4s ease-in-out;
+}
+
+.brand-box1-1 img {
+  transition: all 0.4s ease-in-out;
+  transform: scale(0.9);
+}
+
+.brand-box1-1:hover img {
+  transform: scale(1);
+}
+
+/* =================================
+   ELEMENTOS DE MARCAS
+   ================================= */
+
+.brand-item {
+  display: grid;
+  align-content: center;
+  text-align: center;
+  min-height: 40px;
+  transition: 0.4s ease-in-out;
+}
+
+.brand-item.style2 a .gray {
+  filter: brightness(140%) grayscale(100%);
+  mix-blend-mode: normal;
+}
+
+.brand-item.style3 {
+  border-radius: 20px;
+  border: 1px solid #EDF0F4;
+  background: linear-gradient(180deg, #EDF0F4 0%, rgba(237, 240, 244, 0) 100%);
+  display: grid;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 90px;
+  transition: 0.4s ease-in-out;
+}
+
+.brand-item.style4 {
+  border-radius: 20px;
+  background: #FFFFFF;
+  border: 1px solid #EDF0F4;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 90px;
+  transition: 0.4s ease-in-out;
+}
+
+.brand-item a {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.brand-item a .original {
+  transition: all 0.3s ease-in-out;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.brand-item a .gray {
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+.brand-item a:hover .original {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 3;
+  visibility: visible;
+  transform: translateY(0%);
+}
+
+.brand-item a:hover .gray {
+  display: block;
+  visibility: hidden;
+  transform: translateY(100%);
+}
+
+/* =================================
+   OTRAS SECCIONES DE MARCAS
+   ================================= */
+
+.brand-sec1 {
+  position: relative;
+  z-index: 4;
+  border-radius: 10px;
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-sec1:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--title-color);
+  border-radius: inherit;
+  clip-path: polygon(0 0, 100% 0, 100% 11px, calc(100% - 70px) 50%, 100% calc(100% - 11px), 100% 100%, 0 100%, 0 calc(100% - 11px), 70px 50%, 0 11px);
+  z-index: -1;
+}
+
+.brand-sec6 {
+  padding: 81px 30px;
+  border-radius: 30px;
+}
+
+.brand-sec8 {
+  padding: 80px 0 30px 0;
+}
+
+.brand-sec11 {
+  position: relative;
+  background-color: var(--white-color);
+  box-shadow: 0px 14px 70px rgba(0, 0, 0, 0.04);
+  border-radius: 24px;
+  padding: 30px;
+  margin-top: -80px;
+  z-index: 9;
+}
+
+.brand-area12 {
+  background-color: #1C1C25;
+  padding: 30px 0;
+}
+
+/* =================================
+   SLIDERS ADICIONALES
+   ================================= */
+
+.brand-slider5 {
+  padding-top: 120px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.brand-slider6 {
+  padding-bottom: 80px;
+}
+
+.brand-slider8-area {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background-color: #EFF1F9;
+  padding: 30px 80px;
+  max-width: 1163px;
+  border-radius: 0 50px 50px 0px;
+  z-index: 2;
+}
+
+.brand-slider8 {
+  max-width: 1003px;
+}
+
+.brand-slider13 {
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =================================
+   TÍTULOS DE MARCAS
+   ================================= */
+
+.brand-title {
+  letter-spacing: -0.4px;
+  font-weight: 600;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+   ================================= */
+
+@media (max-width: 1500px) {
+  .brand-sec1:after {
+    clip-path: polygon(0 0, 100% 0, 100% 11px, calc(100% - 40px) 50%, 100% calc(100% - 11px), 100% 100%, 0 100%, 0 calc(100% - 11px), 40px 50%, 0 11px);
+  }
+  
+  .slider-arrow {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1299px) {
+  .brand-sec1:after {
+    clip-path: polygon(0 0, 100% 0, 100% 11px, calc(100% - 30px) 50%, 100% calc(100% - 11px), 100% 100%, 0 100%, 0 calc(100% - 11px), 30px 50%, 0 11px);
+  }
+}
+
+@media (max-width: 1199px) {
+  .brand-item {
+    justify-content: center;
+  }
+  
+  .brand-slider8-area {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand-sec1 {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  
+  .brand-sec1:after {
+    clip-path: none;
+  }
+  
+  .brand-box.py-20 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/* =================================
+   ANIMACIONES
+   ================================= */
+
+@keyframes titleFill {
+  0% {
+    background-position-x: 1rem;
+  }
+}
+
+/* =================================
+   ESTILOS DEL SLIDER SWIPER
+   ================================= */
+
+.th-slider {
+  /* Estilos base para el slider */
+}
+
+.swiper-wrapper {
+  /* Contenedor de slides */
+}
+
+.swiper-slide {
+  /* Slide individual */
+}
+
+/* =================================
+   ESTILOS DE UTILIDAD
+   ================================= */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+/* =================================
+   VARIABLES CSS (si están definidas)
+   ================================= */
+
+:root {
+  --theme-color: #2463AE;
+  --title-color: #141D38;
+  --white-color: #ffffff;
+}
+
+/* =================================
+   FIN DE ESTILOS DE MARCAS
+   ================================= */
+
+
+
+
+
+
