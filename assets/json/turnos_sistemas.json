@@ -2,20 +2,20 @@
   {
     "semana": 1,
     "area": "Desarrollo",
-    "responsable": "Jorge Toledo",
-    "telefono": "+56985668839"
-  },
-  {
-    "semana": 2,
-    "area": "Desarrollo",
     "responsable": "Claudio Vásquez",
     "telefono": "+56956645705"
   },
   {
-    "semana": 3,
+    "semana": 2,
     "area": "Desarrollo",
     "responsable": "Benjamín López",
     "telefono": "+56961656462"
+  },
+  {
+    "semana": 3,
+    "area": "Desarrollo",
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
   },
   {
     "semana": 4,
@@ -26,8 +26,8 @@
   {
     "semana": 5,
     "area": "Desarrollo",
-    "responsable": "Claudio Vásquez",
-    "telefono": "+56956645705"
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
   },
   {
     "semana": 6,
@@ -158,14 +158,14 @@
   {
     "semana": 27,
     "area": "Desarrollo",
-    "responsable": "Jorge Toledo",
-    "telefono": "+56985668839"
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
   },
   {
     "semana": 28,
     "area": "Desarrollo",
-    "responsable": "Héctor Gutierrez",
-    "telefono": "+56948151762"
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
   },
   {
     "semana": 29,
@@ -278,17 +278,15 @@
   {
     "semana": 47,
     "area": "Desarrollo",
-    "responsable": "Jorge Toledo",
-    "telefono": "+56985668839"
- 
+    "responsable": "Héctor Gutierrez",
+    "telefono": "+56948151762"
   },
   {
     "semana": 48,
     "area": "Desarrollo",
-    "responsable": "Héctor Gutierrez",
-    "telefono": "+56948151762"
+    "responsable": "Jorge Toledo",
+    "telefono": "+56985668839"
   },
-  
   {
     "semana": 49,
     "area": "Desarrollo",
@@ -312,5 +310,11 @@
     "area": "Desarrollo",
     "responsable": "Jorge Toledo",
     "telefono": "+56985668839"
+  },
+  {
+    "semana": 53,
+    "area": "Desarrollo",
+    "responsable": "Claudio Vásquez",
+    "telefono": "+56956645705"
   }
 ]

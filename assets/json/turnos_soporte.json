@@ -1,182 +1,320 @@
 [
     {
-        "semana": 23,
+        "semana": 1,
         "responsable": "Edgar Baeza",
         "telefono": "+56992797174",
+        "area": "Soporte"
+    },
+    {
+        "semana": 2,
+        "responsable": "Isaac Vilches",
+        "telefono": "+56995430194",
+        "area": "Soporte"
+    },
+    {
+        "semana": 3,
+        "responsable": "Mario Garrido",
+        "telefono": "+56996497361",
+        "area": "Soporte"
+    },
+    {
+        "semana": 4,
+        "responsable": "Ricardo Alvarado",
+        "telefono": "+56984038078",
+        "area": "Soporte"
+    },
+    {
+        "semana": 5,
+        "responsable": "Felipe Henriquez",
+        "telefono": "+56961157048",
+        "area": "Soporte"
+    },
+    {
+        "semana": 6,
+        "responsable": "Edgar Baeza",
+        "telefono": "+56992797174",
+        "area": "Soporte"
+    },
+    {
+        "semana": 7,
+        "responsable": "Isaac Vilches",
+        "telefono": "+56995430194",
+        "area": "Soporte"
+    },
+    {
+        "semana": 8,
+        "responsable": "Mario Garrido",
+        "telefono": "+56996497361",
+        "area": "Soporte"
+    },
+    {
+        "semana": 9,
+        "responsable": "Ricardo Alvarado",
+        "telefono": "+56984038078",
+        "area": "Soporte"
+    },
+    {
+        "semana": 10,
+        "responsable": "Felipe Henriquez",
+        "telefono": "+56961157048",
+        "area": "Soporte"
+    },
+    {
+        "semana": 11,
+        "responsable": "Edgar Baeza",
+        "telefono": "+56992797174",
+        "area": "Soporte"
+    },
+    {
+        "semana": 12,
+        "responsable": "Isaac Vilches",
+        "telefono": "+56995430194",
+        "area": "Soporte"
+    },
+    {
+        "semana": 13,
+        "responsable": "Mario Garrido",
+        "telefono": "+56996497361",
+        "area": "Soporte"
+    },
+    {
+        "semana": 14,
+        "responsable": "Ricardo Alvarado",
+        "telefono": "+56984038078",
+        "area": "Soporte"
+    },
+    {
+        "semana": 15,
+        "responsable": "Felipe Henriquez",
+        "telefono": "+56961157048",
+        "area": "Soporte"
+    },
+    {
+        "semana": 16,
+        "responsable": "Edgar Baeza",
+        "telefono": "+56992797174",
+        "area": "Soporte"
+    },
+    {
+        "semana": 17,
+        "responsable": "Isaac Vilches",
+        "telefono": "+56995430194",
+        "area": "Soporte"
+    },
+    {
+        "semana": 18,
+        "responsable": "Mario Garrido",
+        "telefono": "+56996497361",
+        "area": "Soporte"
+    },
+    {
+        "semana": 19,
+        "responsable": "Ricardo Alvarado",
+        "telefono": "+56984038078",
+        "area": "Soporte"
+    },
+    {
+        "semana": 20,
+        "responsable": "Felipe Henriquez",
+        "telefono": "+56961157048",
+        "area": "Soporte"
+    },
+    {
+        "semana": 21,
+        "responsable": "Edgar Baeza",
+        "telefono": "+56992797174",
+        "area": "Soporte"
+    },
+    {
+        "semana": 22,
+        "responsable": "Isaac Vilches",
+        "telefono": "+56995430194",
+        "area": "Soporte"
+    },
+    {
+        "semana": 23,
+        "responsable": "Mario Garrido",
+        "telefono": "+56996497361",
         "area": "Soporte"
     },
     {
         "semana": 24,
-        "responsable": "Isaac Vilches",
-        "telefono": "+56995430194",
+        "responsable": "Ricardo Alvarado",
+        "telefono": "+56984038078",
         "area": "Soporte"
     },
     {
         "semana": 25,
-        "responsable": "Mario Garrido",
-        "telefono": "+56996497361",
+        "responsable": "Felipe Henriquez",
+        "telefono": "+56961157048",
         "area": "Soporte"
     },
     {
         "semana": 26,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
+        "responsable": "Edgar Baeza",
+        "telefono": "+56992797174",
         "area": "Soporte"
     },
     {
         "semana": 27,
-        "responsable": "Felipe Henriquez",
-        "telefono": "+56961157048",
+        "responsable": "Isaac Vilches",
+        "telefono": "+56995430194",
         "area": "Soporte"
     },
     {
         "semana": 28,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
+        "responsable": "Mario Garrido",
+        "telefono": "+56996497361",
         "area": "Soporte"
     },
     {
         "semana": 29,
-        "responsable": "Isaac Vilches",
-        "telefono": "+56995430194",
+        "responsable": "Ricardo Alvarado",
+        "telefono": "+56984038078",
         "area": "Soporte"
     },
     {
         "semana": 30,
-        "responsable": "Mario Garrido",
-        "telefono": "+56996497361",
+        "responsable": "Felipe Henriquez",
+        "telefono": "+56961157048",
         "area": "Soporte"
     },
     {
         "semana": 31,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
+        "responsable": "Edgar Baeza",
+        "telefono": "+56992797174",
         "area": "Soporte"
     },
     {
         "semana": 32,
-        "responsable": "Felipe Henriquez",
-        "telefono": "+56961157048",
+        "responsable": "Isaac Vilches",
+        "telefono": "+56995430194",
         "area": "Soporte"
     },
     {
         "semana": 33,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
+        "responsable": "Mario Garrido",
+        "telefono": "+56996497361",
         "area": "Soporte"
     },
     {
         "semana": 34,
-        "responsable": "Isaac Vilches",
-        "telefono": "+56995430194",
+        "responsable": "Ricardo Alvarado",
+        "telefono": "+56984038078",
         "area": "Soporte"
     },
     {
         "semana": 35,
-        "responsable": "Mario Garrido",
-        "telefono": "+56996497361",
+        "responsable": "Felipe Henriquez",
+        "telefono": "+56961157048",
         "area": "Soporte"
     },
     {
         "semana": 36,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
+        "responsable": "Edgar Baeza",
+        "telefono": "+56992797174",
         "area": "Soporte"
     },
     {
         "semana": 37,
-        "responsable": "Felipe Henriquez",
-        "telefono": "+56961157048",
+        "responsable": "Isaac Vilches",
+        "telefono": "+56995430194",
         "area": "Soporte"
     },
     {
         "semana": 38,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
+        "responsable": "Mario Garrido",
+        "telefono": "+56996497361",
         "area": "Soporte"
     },
     {
         "semana": 39,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
+        "responsable": "Ricardo Alvarado",
+        "telefono": "+56984038078",
         "area": "Soporte"
     },
     {
         "semana": 40,
-        "responsable": "Mario Garrido",
-        "telefono": "+56996497361",
+        "responsable": "Felipe Henriquez",
+        "telefono": "+56961157048",
         "area": "Soporte"
     },
     {
         "semana": 41,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
+        "responsable": "Edgar Baeza",
+        "telefono": "+56992797174",
         "area": "Soporte"
     },
     {
         "semana": 42,
-        "responsable": "Felipe Henriquez",
-        "telefono": "+56961157048",
+        "responsable": "Isaac Vilches",
+        "telefono": "+56995430194",
         "area": "Soporte"
     },
     {
         "semana": 43,
-        "responsable": "Edgar Baeza",
-        "telefono": "+56992797174",
+        "responsable": "Mario Garrido",
+        "telefono": "+56996497361",
         "area": "Soporte"
     },
     {
         "semana": 44,
-        "responsable": "Isaac Vilches",
-        "telefono": "+56995430194",
+        "responsable": "Ricardo Alvarado",
+        "telefono": "+56984038078",
         "area": "Soporte"
     },
     {
         "semana": 45,
-        "responsable": "Mario Garrido",
-        "telefono": "+56996497361",
-        "area": "Soporte"
-    },
-    {
-        "semana": 46,
-        "responsable": "Ricardo Alvarado",
-        "telefono": "+56984038078",
-    "area": "Soporte"
-    },
-    {
-        "semana": 47,
         "responsable": "Felipe Henriquez",
         "telefono": "+56961157048",
         "area": "Soporte"
     },
     {
-        "semana": 48,
+        "semana": 46,
         "responsable": "Edgar Baeza",
         "telefono": "+56992797174",
         "area": "Soporte"
     },
     {
-        "semana": 49,
+        "semana": 47,
         "responsable": "Isaac Vilches",
         "telefono": "+56995430194",
         "area": "Soporte"
     },
     {
-        "semana": 50,
+        "semana": 48,
         "responsable": "Mario Garrido",
         "telefono": "+56996497361",
         "area": "Soporte"
     },
     {
-        "semana": 51,
+        "semana": 49,
         "responsable": "Ricardo Alvarado",
         "telefono": "+56984038078",
         "area": "Soporte"
     },
     {
-        "semana": 52,
+        "semana": 50,
         "responsable": "Felipe Henriquez",
         "telefono": "+56961157048",
+        "area": "Soporte"
+    },
+    {
+        "semana": 51,
+        "responsable": "Edgar Baeza",
+        "telefono": "+56992797174",
+        "area": "Soporte"
+    },
+    {
+        "semana": 52,
+        "responsable": "Isaac Vilches",
+        "telefono": "+56995430194",
+        "area": "Soporte"
+    },
+    {
+        "semana": 53,
+        "responsable": "Mario Garrido",
+        "telefono": "+56996497361",
         "area": "Soporte"
     }
 ]
