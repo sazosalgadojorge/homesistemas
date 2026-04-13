@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/apps.html"
+    "livePreview.defaultPreviewPath": "/apps.html",
+    "folder-color.pathColors": []
 }

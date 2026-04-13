@@ -87,8 +87,8 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #2463AE;
-  --theme-color2: #2463AE;
+  --theme-color: #194388;
+  --theme-color2: #194388;
   --title-color: #141D38;
   --body-color: #737887;
   --smoke-color: #F5F5F5;
@@ -134,26 +134,26 @@ body {
 }
 
 body.theme-blue {
-  --theme-color: #2463AE;
+  --theme-color: #194388;
   background-color: #F8FAFF;
 }
 
 body.theme-blue2 {
-  --theme-color: #2463AE;
+  --theme-color: #194388;
   background-color: #F3F2EA;
 }
 
 body.theme-blue3 {
-  --theme-color: #2463AE;
+  --theme-color: #194388;
 }
 
 body.theme-blue4 {
-  --theme-color: #2463AE;
+  --theme-color: #194388;
   --theme-color2: #0031DD;
 }
 
 body.theme-blue5 {
-  --theme-color: #2463AE;
+  --theme-color: #194388;
   background-color: #0E0E0E;
 }
 
@@ -10436,7 +10436,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 
 .texto-home {
   
-  background: transparent linear-gradient(253deg, #2463ae 0%, #0b3456 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(253deg, #194388 0%, #194388 100%) 0% 0% no-repeat padding-box;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -17561,7 +17561,7 @@ span.select2-selection.select2-selection--single:focus {
 /* Contact 1 ---------------------------------- */
 
 #Titulo {
-  background: transparent linear-gradient(253deg, #2463ae 0%, #0b3456 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(253deg, #194388 0%, #194388 100%) 0% 0% no-repeat padding-box;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -25599,7 +25599,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .page-link {
-  color: #2463AE;
+  color: #194388;
 }
 
 /* resize tabla anexos */
