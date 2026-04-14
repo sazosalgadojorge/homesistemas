@@ -1,4 +1,5 @@
 <link href="assets/css/menustyle.css" rel="stylesheet" />
+<link href="assets/css/mobile-menu.css" rel="stylesheet" />
 <!--============================== Header Area ==============================-->
 
 <header class="th-header header-layout17">
@@ -7,7 +8,7 @@
         <div class="menu-area">
             <div class="container th-container4">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-auto">
+                    <div class="col-2">
                         <div class="header-logo">
                             <a class="" href="index.html"><span data-mask-src="assets/img/Logotipo.svg" class="mask-icon"></span><img src="assets/img/Logotipo.svg" alt="Webteck" style="height: 60px; width: auto;" /></a>
                         </div>
@@ -106,7 +107,7 @@
                                     <a href="#">Soporte TI</a>
                                     <ul class="sub-menu">
                                         <li class="menu-item-has-children">
-                                            <a href="#" style="padding-left: 10px; width: 250px;">Incidencias y Solicitudes</a>
+                                            <a href="#" style="padding-left: 10px;">Incidencias y Solicitudes</a>
                                             <ul class="sub-menu">
                                                 <li>
                                                     <a href="https://incidencias.verfrut.cl/login" target="_blank">
@@ -133,7 +134,7 @@
                                         </li>
 
                                         <li class="menu-item-has-children">
-                                            <a href="#" style="padding-left: 10px; width: 250px;">Seguridad</a>
+                                            <a href="#" style="padding-left: 10px;">Seguridad</a>
                                             <ul class="sub-menu">
                                                 <li>
                                                     <a href="https://verfrutsa.sharepoint.com/sites/Ciberseguridadconcientizacion" target="_blank"><i class="fi fi-rr-shield-check"></i>Portal de concientización</a>
@@ -141,7 +142,7 @@
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#" style="padding-left: 10px; width: 250px;">Contacto</a>
+                                            <a href="#" style="padding-left: 10px;">Contacto</a>
                                             <ul class="sub-menu">
                                                 <li>
                                                     <a href="anexos.html"><i class="fi fi-rr-phone-call"></i>Anexos Telefónicos</a>
@@ -190,7 +191,7 @@
     <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
-            <a class="icon-masking" href="index.html"><span data-mask-src="assets/img/icon/Verfrut-Tagline.svg" class="mask-icon"></span><img src="assets/img/icon/Verfrut-Tagline.svg" alt="verfrut" style="width: 90px;" /></a>
+            <a href="index.html"><img src="assets/img/Logotipo.svg" alt="Logotipo" style="height: 50px; width: auto;" /></a>
         </div>
 
         <div class="th-mobile-menu">
@@ -371,303 +372,6 @@
     </div>
 </div>
 
-<style>
-/* Estilos para el menú móvil colapsable */
-.mobile-submenu {
-    display: none;
-    padding-left: 25px;
-    margin-top: 15px;
-    border-left: 3px solid #e9ecef;
-    margin-left: 15px;
-    padding-bottom: 10px;
-}
-
-.mobile-submenu.active {
-    display: block;
-    animation: slideDown 0.3s ease-out;
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.mobile-arrow {
-    transition: all 0.3s ease;
-    float: right;
-    margin-top: 3px;
-    font-size: 16px;
-    color: #6c757d;
-    margin-right: 5px;
-}
-
-.mobile-arrow.rotated {
-    transform: translateY(3px);
-    color: #007bff;
-}
-
-.mobile-menu-toggle,
-.mobile-submenu-toggle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    text-decoration: none;
-    color: inherit;
-    padding: 16px 20px;
-    border-radius: 12px;
-    margin-bottom: 12px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border: 1px solid #dee2e6;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.mobile-menu-toggle:hover,
-.mobile-submenu-toggle:hover {
-    text-decoration: none;
-    color: inherit;
-    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.mobile-menu-toggle:active,
-.mobile-submenu-toggle:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* Mejorar espaciado general del menú móvil */
-.th-mobile-menu {
-margin-left: 1rem !important;
-margin-right: 1rem !important;
-
-}
-
-.th-mobile-menu ul {
-    padding-left: 0;
-    margin: 0;
-}
-
-.th-mobile-menu li {
-    margin-bottom: 15px;
-    list-style: none;
-}
-
-.th-mobile-menu > ul > li {
-    margin-bottom: 25px;
-}
-
-.th-mobile-menu a {
-    padding: 14px 20px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    font-size: 15px;
-}
-
-.th-mobile-menu a:hover {
-    background-color: #f8f9fa;
-    transform: translateX(8px);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* Estilos específicos para elementos bloqueados */
-.th-mobile-menu a.text-muted {
-    opacity: 0.6;
-    background-color: #f8f9fa;
-    border: 1px dashed #dee2e6;
-    padding: 12px 18px;
-}
-
-.th-mobile-menu a.text-muted:hover {
-    opacity: 0.8;
-    background-color: #e9ecef;
-    transform: translateX(5px);
-}
-
-/* Diseño limpio y ordenado del menú móvil */
-.mobile-logo {
-    margin-bottom: 30px;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.th-menu-area {
-    padding: 0;
-    background: #ffffff;
-}
-
-/* Organización visual mejorada */
-.th-mobile-menu {
-    padding: 0;
-}
-
-.th-mobile-menu > ul {
-    margin: 0;
-    padding: 0;
-}
-
-.th-mobile-menu > ul > li {
-    margin: 0;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.th-mobile-menu > ul > li:last-child {
-    border-bottom: none;
-}
-
-/* Estilo de secciones principales - diseño limpio */
-.mobile-menu-toggle {
-    background: #ffffff;
-    border: none;
-    border-radius: 0;
-    margin: 0;
-    padding: 18px 25px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #333333;
-    position: relative;
-    transition: background-color 0.2s ease;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    text-decoration: none;
-}
-
-.mobile-menu-toggle:hover {
-    background: #f8f9fa;
-    text-decoration: none;
-    color: #333333;
-}
-
-.mobile-menu-toggle:active {
-    background: #e9ecef;
-}
-
-/* Estilo de subsecciones - más integrado */
-.mobile-submenu-toggle {
-    background: #f8f9fa;
-    border: none;
-    border-radius: 0;
-    margin: 0;
-    padding: 15px 25px 15px 35px;
-    font-size: 15px;
-    font-weight: 400;
-    color: #555555;
-    transition: background-color 0.2s ease;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    text-decoration: none;
-}
-
-.mobile-submenu-toggle:hover {
-    background: #e9ecef;
-    text-decoration: none;
-    color: #555555;
-}
-
-/* Submenús mejorados - diseño fluido */
-.mobile-submenu {
-    background: #ffffff;
-    border-left: 2px solid #007bff;
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
-}
-
-/* Enlaces individuales - diseño limpio */
-.th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle) {
-    padding: 12px 25px 12px 45px;
-    border-radius: 0;
-    margin: 0;
-    background: #ffffff;
-    border: none;
-    color: #666666;
-    font-size: 14px;
-    transition: all 0.2s ease;
-    display: block;
-    text-decoration: none;
-    border-bottom: 1px solid #f5f5f5;
-}
-
-.th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle):hover {
-    background: #f8f9fa;
-    color: #333333;
-    transform: none;
-    box-shadow: none;
-    text-decoration: none;
-}
-
-/* Elementos bloqueados - estilo sutil */
-.th-mobile-menu a.text-muted {
-    background: #fafafa;
-    color: #999999;
-    opacity: 0.8;
-    font-style: italic;
-}
-
-.th-mobile-menu a.text-muted:hover {
-    background: #f0f0f0;
-    color: #777777;
-    transform: none;
-}
-
-/* Flechas mejoradas */
-.mobile-arrow {
-    font-size: 12px;
-    color: #999999;
-    transition: all 0.2s ease;
-    margin-left: 8px;
-}
-
-.mobile-menu-toggle .mobile-arrow {
-    font-size: 14px;
-    color: #666666;
-}
-
-.mobile-arrow.rotated {
-    transform: translateY(1px);
-    color: #007bff;
-}
-
-/* Enlaces simples (como Inicio y Turnos) */
-.th-mobile-menu > ul > li > a:not(.mobile-menu-toggle) {
-    padding: 18px 25px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #333333;
-    background: #ffffff;
-    border-bottom: 1px solid #f0f0f0;
-    transition: background-color 0.2s ease;
-}
-
-.th-mobile-menu > ul > li > a:not(.mobile-menu-toggle):hover {
-    background: #f8f9fa;
-    color: #333333;
-    text-decoration: none;
-}
-
-/* Iconos en enlaces */
-.th-mobile-menu a i {
-    margin-right: 10px;
-    width: 16px;
-    text-align: center;
-}
-</style>
 
 
 

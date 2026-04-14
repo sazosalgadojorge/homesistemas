@@ -343,21 +343,6 @@
   }
 }
 
-/* =================================
-   ESTILOS DEL SLIDER SWIPER
-   ================================= */
-
-.th-slider {
-  /* Estilos base para el slider */
-}
-
-.swiper-wrapper {
-  /* Contenedor de slides */
-}
-
-.swiper-slide {
-  /* Slide individual */
-}
 
 /* =================================
    ESTILOS DE UTILIDAD
@@ -399,6 +384,219 @@
   --theme-color: #2463AE;
   --title-color: #141D38;
   --white-color: #ffffff;
+}
+
+/* =================================
+   HERO BANNER
+   ================================= */
+
+/* Padding top compensa header fijo */
+.texto-home {
+  padding-top: 72px;
+  padding-bottom: 0;
+}
+
+/* Row altura mínima — alineación top para evitar espacio vacío */
+.hero-row {
+  min-height: 640px;
+  align-items: flex-start !important;
+}
+
+@media (max-width: 991px) {
+  .hero-row {
+    min-height: auto;
+    align-items: flex-start !important;
+  }
+}
+
+/* Columna izquierda — espaciado y alineación */
+.hero-left {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 991px) {
+  .hero-left {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 5px 14px;
+  border-radius: 100px;
+}
+
+/* Título */
+.hero-title {
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Subtítulo */
+.hero-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  max-width: 460px;
+  text-transform: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+@media (max-width: 991px) {
+  .hero-subtitle {
+    max-width: 100%;
+  }
+}
+
+/* Botón primario dentro del hero (fondo blanco para contrastar con el azul) */
+.texto-home .th-btn {
+  background-color: #2057b0;
+  color: #ffffff;
+  text-transform: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.texto-home .th-btn:hover,
+.texto-home .th-btn.active {
+  background-color: #1b4c9b;
+  color: #ffffff;
+}
+
+/* Neutraliza el overlay animado del tema que oscurecía el botón */
+.texto-home .th-btn::before,
+.texto-home .th-btn::after {
+  display: none !important;
+}
+
+/* Botón ghost secundario */
+.hero-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 26px;
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.14);
+  -webkit-appearance: none;
+  appearance: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.hero-btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.75);
+  color: #ffffff;
+}
+
+/* Stats row */
+.hero-stats {
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 0;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.hero-stat-number {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.hero-stat-divider {
+  width: 1px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.18);
+  flex-shrink: 0;
+}
+
+/* Columna imagen */
+.imagenes-banner {
+  padding-right: 0;
+  align-items: center !important;
+  align-self: center !important;
+  transform: translateY(-9%);
+}
+
+/* Imagen PC — llena la columna de derecha a izquierda */
+.hero-pc-img {
+  width: 100%;
+  max-width: 680px;
+}
+
+@media (max-width: 1199px) {
+  .hero-pc-img {
+    max-width: 520px;
+  }
+}
+
+/* Bloque de estadísticas (70%, 80%) */
+.stats-block {
+  background-color: #EFF1F9;
+  padding: 23px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+@media (max-width: 575px) {
+  .stats-block {
+    padding: 16px;
+  }
+}
+
+/* Imagen del teléfono en el hero */
+.phone-imagen {
+  position: absolute;
+  top: 100px;
+  left: -30px;
+  width: 260px;
+}
+
+@media (max-width: 1199px) {
+  .phone-imagen {
+    top: 60px;
+    left: -10px;
+    width: 200px;
+  }
 }
 
 /* =================================

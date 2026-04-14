@@ -142,12 +142,6 @@
   }
 }
 
-@media (max-width: 1534px) {
-  #cardContainer {
-    transform: scale(0.9); /* 80% del tamaño original */
-    align-items: center;
-  }
-}
 
 .btn-close-modal {
   color: #fff;
@@ -168,7 +162,3 @@
   position: relative; /* Necesario para el tooltip */
 }
 
-.disabled {
-  pointer-events: none; /* No permitir click */
-  opacity: 0.6;
-}

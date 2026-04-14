@@ -10435,10 +10435,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 }
 
 .texto-home {
-  
   background: transparent linear-gradient(253deg, #194388 0%, #194388 100%) 0% 0% no-repeat padding-box;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
 }
 
 /*------------------- 4.8. Hero Area  -------------------*/
@@ -10524,17 +10521,7 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
   object-fit: cover;
 }
 
-/* Hero 1 ---------------------------------- */
-.hero-subtitle {
-  font-family: var(--title-font);
-  color: var(--theme-color);
-  display: block;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 17px;
-  text-transform: uppercase;
-  margin-top: -0.24em;
-}
+
 
 h1 {
   font-family: "Montserrat";
@@ -10561,9 +10548,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.hero-title:last-of-type {
-  margin-bottom: 21px;
-}
 
 .hero-text {
   margin-bottom: 43px;

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r \"width.*:.*[0-9]\\\\+px\" /Users/desarrolloverfrut/Documents/web-homeverfrut/homesistemas/*.html)",
+      "Bash(grep -n \"position.*absolute.*left.*[0-9]\\\\+px\\\\|position.*absolute.*top.*[0-9]\\\\+px\" /Users/desarrolloverfrut/Documents/web-homeverfrut/homesistemas/*.html)",
+      "Bash(grep:*)",
+      "Bash(wc -l /Users/desarrolloverfrut/Documents/web-homeverfrut/homesistemas/*.html)",
+      "Bash(for f:*)",
+      "Bash(do grep:*)",
+      "Bash(xargs rm:*)",
+      "Bash(find /Users/desarrolloverfrut/Documents/web-homeverfrut/homesistemas/assets/img -type d -empty -delete)",
+      "Bash(do)",
+      "Bash(python3 -c \":*)",
+      "Bash(done)",
+      "Bash(sed -i '' 's|href=\"\"assets/css/brand-styles.css\"\"|href=\"\"brand-styles.css\"\"|g' \"$f\")",
+      "Bash(sed -i '' 's|href=\"\"/assets/css/brand-styles.css\"\"|href=\"\"/brand-styles.css\"\"|g' \"$f\")"
+    ]
+  }
+}

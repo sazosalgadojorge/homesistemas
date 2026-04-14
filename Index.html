@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Verfrut - Technology</title>
+    <title>Unifrutti - Technology</title>
     <meta name="jsazo" content="Sistemas y Soporte">
     <meta name="description" content="Verfrut Technology">
     <meta name="keywords" content="Verfrut Technology & IT Solutions">
@@ -37,8 +37,8 @@
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     
     <link href="/assets/css/menustyle.css" rel="stylesheet" />
-    
-    
+    <link rel="stylesheet" href="brand-styles.css">
+
 </head>
 
     <body class="theme-blue3">
@@ -69,81 +69,91 @@
 
 <!--============================== Hero Area ==============================-->
 
-    <div class="row bienvenido texto-home">
+    <div class="bienvenido texto-home">
         <div class="container th-container4">
-            <div class="row" style="min-height: 800px;">
-                <!-- Left Column -->
-                <div class="col-lg-4 d-flex flex-column justify-content-top titulo-sm" style="padding-top:8%;">
-                    <!-- Title and Subtitle -->
-                    <h1 class="w-75 lh-1 titulo-bienvenido" id="titulo-bienvenido">Bienvenido a sistemas & soporte.</h1>
-                    <p class="text-white w-75 lh-base fs-5 pb-3 subtitulo-bienvenido" id="subtitulo-bienvenido">
-                        Gestionamos la infraestructura tecnológica de Verfrut con soluciones vanguardistas que impulsan la eficiencia
-                        el crecimiento continuo.
+            <div class="row hero-row gx-5 align-items-center">
+
+                <!-- Columna izquierda -->
+                <div class="col-12 col-lg-6 col-xl-5 d-flex flex-column gap-3 hero-left">
+                    <!-- Badge -->
+                    <div>
+                        <span class="hero-badge">
+                            <i class="fi fi-rr-shield-check"></i>
+                            Sistemas &amp; Soporte TI · Verfrut
+                        </span>
+                    </div>
+                    <!-- Título -->
+                    <h1 class="hero-title" id="titulo-bienvenido">
+                        Bienvenido a<br>sistemas &amp; soporte.
+                    </h1>
+                    <!-- Subtítulo -->
+                    <p class="hero-subtitle" id="subtitulo-bienvenido">
+                        Gestionamos la infraestructura tecnológica de Verfrut con soluciones que impulsan la eficiencia y el crecimiento continuo.
                     </p>
-
-                    <!-- Modal Button -->
-                    <button type="button" class="col-6 th-btn style-radius text-capitalize d-flex align-items-center justify-content-center gap-3" 
-                            data-bs-toggle="modal" 
-                            data-bs-target="#exampleModal" 
-                            style="font-size: 18px;">
-                        <span id="btn-incidencias">Incidencias</span>
-                        <i class="fi fi-rr-arrow-up-right pt-1"></i>
-                    </button>
-
-                    <button type="button"
-                            class="col-6 th-btn style-radius text-capitalize d-flex align-items-center justify-content-center gap-3 mt-4 d-block d-md-none" 
-                            data-bs-toggle="modal" data-bs-target="#miModal"
-                            style="font-size: 18px;">
-                        <span id="btn-apps" class="text-truncate d-inline-block" style="max-width: 100%; font-size: 1rem; white-space: normal;">Gestion usuarios</span>
-                        <i  class="fi fi-rr-apps-add"
-                            id="iconos-flat"></i>
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="container">
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-sm modal-incidencias">
-                                <div class="modal-content mo-content p-3">
-                                    <div class="modal-header border-0">
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" 
-                                                style="position: absolute; right: 20px; top: 20px; color: rgb(59, 59, 59);">✕</button>
+                    <!-- CTAs -->
+                    <div class="d-flex flex-wrap gap-3">
+                        <button type="button"
+                                class="th-btn style-radius text-capitalize d-flex align-items-center gap-2"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                            <i class="fi fi-rr-bug"></i>
+                            <span id="btn-incidencias">Reportar incidencia</span>
+                        </button>
+                    </div>
+                    <!-- Stats -->
+                    <div class="hero-stats d-flex align-items-center gap-4">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">2</span>
+                            <span class="hero-stat-label">Países</span>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">24/7</span>
+                            <span class="hero-stat-label">Soporte</span>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">+10</span>
+                            <span class="hero-stat-label">Sistemas</span>
+                        </div>
+                    </div>
+                    <!-- Modal incidencias -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-sm modal-incidencias">
+                            <div class="modal-content mo-content p-3">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                                            style="position: absolute; right: 20px; top: 20px; color: rgb(59,59,59);">✕</button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="mb-3">
+                                        <img src="assets/img/logoverfrut.png" alt="Logo Verfrut" style="width: 100px;">
                                     </div>
-                                    <div class="modal-body text-center">
-                                        <div class="mb-3">
-                                            <img src="assets/img/logoverfrut.png" alt="Logo Verfrut" style="width: 100px;">
-                                        </div>
-                                        <h5 class="mb-3" style="font-weight: 500; font-size: 16px;">Seleccione su ubicación</h5>
-                                        <div class="d-grid gap-2">
-                                            <a href="https://incidencias.verfrut.cl/login" target="_blank" class="mb-2 th-btn text-capitalize" style="font-size: 16px;">
-                                                <img src="assets/img/icon/chile.png" alt="Chile" style="width: 20px; margin-right: 8px;">Incidencias Chile
-                                            </a>
-                                            <a href="https://incidencias.verfrut.pe/login" target="_blank" class="th-btn text-capitalize" style="font-size: 16px;">
-                                                <img src="assets/img/icon/peru.png" alt="Peru" style="width: 20px; margin-right: 8px;">Incidencias Perú
-                                            </a>
-                                        </div>
+                                    <h5 class="mb-3" style="font-weight: 500; font-size: 16px;">Seleccione su ubicación</h5>
+                                    <div class="d-grid gap-2">
+                                        <a href="https://incidencias.verfrut.cl/login" target="_blank" class="mb-2 th-btn text-capitalize" style="font-size: 16px;">
+                                            <img src="assets/img/icon/chile.png" alt="Chile" style="width: 20px; margin-right: 8px;">Incidencias Chile
+                                        </a>
+                                        <a href="https://incidencias.verfrut.pe/login" target="_blank" class="th-btn text-capitalize" style="font-size: 16px;">
+                                            <img src="assets/img/icon/peru.png" alt="Peru" style="width: 20px; margin-right: 8px;">Incidencias Perú
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Right Column - Images -->
-                <div class="col-lg-8 d-flex align-items-center justify-content-end position-relative imagenes-banner">
-                    <img width="800" src="assets/img/pc.png" class="hover-mac" alt="macbook">
-                    <div class="media-phone">
-                        <img style="position: absolute; top: 150px; left: 120px; width: 300px;" class="hover-phone phone-imagen" src="assets/img/phone.png" alt="phone">
-                    </div>
+                <!-- Columna derecha: imagen -->
+                <div class="col-lg-6 col-xl-7 d-none d-lg-flex align-items-center justify-content-end position-relative imagenes-banner">
+                    <img src="assets/img/pc.png" class="hover-mac hero-pc-img img-fluid" alt="macbook">
                 </div>
-    </div>
-    </div>
-    </div>
-    </div>
+            </div>
+        </div>
     </div>
  
 <!--============================== Marcas ==============================-->
         
-    <div class="brand-sec4 overflow-hidden p-5">
+    <div class="brand-sec4 overflow-hidden p-3 p-md-5">
 
             <div class="container th-container4">
                 
@@ -229,7 +239,7 @@
 
     <!--============================== Incidencias ==============================-->
 
-    <div class="position-relative overflow-hidden p-5 mt-3">
+    <div class="position-relative overflow-hidden p-3 p-md-5 mt-3">
         <div class="container th-container4">
             <div class="feature-wrap9 style2">
                 <div class="row gy-5 justify-content-center justify-content-lg-between align-items-center">
@@ -279,8 +289,7 @@
                     <!-- porcentaje -->
                     <div class="container sec-percentage">
 
-                        <div class="row align-items-center"
-                            style="background-color: #EFF1F9; padding: 23px; border-radius: 15px; margin-bottom: 30px; margin-top: 20px;">
+                        <div class="row align-items-center stats-block">
 
                             <div class="col-2 m-2 about16-year-counter_number">
                                 <span class="counter-number">70</span><span>%</span>
@@ -323,7 +332,7 @@
 
 <!--============================== FrutApp Area ==============================-->
 
-    <div class="position-relative bg-smoke3 th-radius2 m-5 mt-xl-5 mb-0">
+    <div class="position-relative bg-smoke3 th-radius2 m-2 m-md-4 m-xl-5 mt-xl-5 mb-0">
         <div class="container th-container4">
             <div class="row align-items-end">
                 <div class="col-xl-5 pe-xl-5">
@@ -365,7 +374,7 @@
 
 <!--============================== Seguridad Area ==============================-->
 
-    <div class="position-relative overflow-hidden p-5 mt-5">
+    <div class="position-relative overflow-hidden p-3 p-md-5 mt-3 mt-md-5">
         <div class="container th-container4">
             <div class="feature-wrap9 style2">
                 <div class="row gy-5 justify-content-center justify-content-lg-between align-items-center">
@@ -1012,13 +1021,13 @@
             </div> -->
     </section>
 
-    <div class="row p-5">
+    <div class="row px-3 px-md-5 py-3">
         <hr class="m-3"/>
     </div>
     
 <!--============================== Sistemas y Aplicaciones ==============================-->
 
-    <div class="position-relative p-5 bg-smoke3 th-radius2 m-5 mt-xl-5 mb-0">
+    <div class="position-relative p-3 p-md-5 bg-smoke3 th-radius2 m-2 m-md-4 m-xl-5 mt-xl-5 mb-0">
         <section class="" id="service-sec"
                 data-bg-src="">
                 

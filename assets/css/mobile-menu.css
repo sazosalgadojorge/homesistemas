@@ -1,0 +1,328 @@
+/* =================================================
+   MENÚ MÓVIL — Diseño corporativo IT
+   ================================================= */
+
+/* ── Panel ─────────────────────────────────────── */
+.th-menu-wrapper .th-menu-area {
+    max-width: 340px !important;
+    border-right: none !important;
+    box-shadow: 6px 0 32px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 400px) {
+    .th-menu-wrapper .th-menu-area {
+        max-width: 100% !important;
+    }
+}
+
+/* ── Header del panel ───────────────────────────── */
+.th-menu-area {
+    padding: 0 !important;
+    background: #ffffff;
+}
+
+.mobile-logo {
+    padding: 18px 20px 16px;
+    border-bottom: 1px solid #edf0f7;
+    margin-bottom: 0;
+    text-align: left;
+    background: #ffffff;
+}
+
+/* ── Botón cierre ───────────────────────────────── */
+.th-menu-wrapper .th-menu-toggle {
+    right: -14px !important;
+    top: 22px !important;
+    width: 28px !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    font-size: 13px !important;
+    background-color: #194388 !important;
+    border: 2px solid #ffffff !important;
+    box-shadow: 0 2px 8px rgba(25, 67, 136, 0.35) !important;
+    border-radius: 50% !important;
+}
+
+/* ── Scroll interno ─────────────────────────────── */
+.th-mobile-menu {
+    margin-top: 0;
+    padding-bottom: 40px;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align: left;
+    background: #ffffff;
+}
+
+/* ── Resets de style.css ────────────────────────── */
+.th-mobile-menu > ul {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.th-mobile-menu ul {
+    padding-left: 0 !important;
+    margin: 0 !important;
+}
+
+.th-mobile-menu ul li {
+    border-bottom: none !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.th-mobile-menu ul li li:first-child {
+    border-top: none !important;
+}
+
+.th-mobile-menu ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.th-mobile-menu ul li ul li {
+    padding-left: 0 !important;
+}
+
+.th-mobile-menu ul .th-item-has-children > a:after,
+.th-mobile-menu ul li a:before {
+    display: none !important;
+}
+
+/* ── Separadores nivel 1 ────────────────────────── */
+.th-mobile-menu > ul > li {
+    border-bottom: 1px solid #f0f2f8 !important;
+}
+
+.th-mobile-menu > ul > li:last-child {
+    border-bottom: none !important;
+}
+
+/* ── NIVEL 1 — Links simples (Inicio, Turnos) ───── */
+.th-mobile-menu > ul > li > a:not(.mobile-menu-toggle) {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 0 20px !important;
+    min-height: 58px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #1a1a2e !important;
+    background: #ffffff !important;
+    text-decoration: none !important;
+    border-left: 3px solid transparent !important;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease !important;
+    letter-spacing: 0.01em !important;
+}
+
+.th-mobile-menu > ul > li > a:not(.mobile-menu-toggle):hover {
+    background: #f0f4ff !important;
+    color: #194388 !important;
+    border-left-color: #194388 !important;
+}
+
+/* ── NIVEL 1 — Botones con submenú (Sistemas...) ── */
+.mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 58px;
+    padding: 0 20px;
+    background: #ffffff;
+    border: none;
+    border-left: 3px solid transparent;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a2e;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    letter-spacing: 0.01em;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.mobile-menu-toggle:hover,
+.mobile-menu-toggle:focus {
+    background: #f0f4ff;
+    color: #194388;
+    border-left-color: #194388;
+    outline: none;
+}
+
+.mobile-menu-toggle.active {
+    background: #eef2fd;
+    color: #194388;
+    border-left-color: #194388;
+}
+
+/* ── Flecha toggle — badge circular ─────────────── */
+.mobile-arrow {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #f0f2f8;
+    color: #7a80a0;
+    font-size: 11px;
+    margin-left: auto;
+    transition: transform 0.22s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.mobile-menu-toggle:hover .mobile-arrow,
+.mobile-menu-toggle.active .mobile-arrow {
+    background: #dce5f9;
+    color: #194388;
+}
+
+.mobile-submenu-toggle:hover .mobile-arrow,
+.mobile-submenu-toggle.active .mobile-arrow {
+    background: #dce5f9;
+    color: #194388;
+}
+
+.mobile-arrow.rotated {
+    transform: rotate(180deg);
+    background: #dce5f9;
+    color: #194388;
+}
+
+/* ── SUBMENÚ NIVEL 1 ────────────────────────────── */
+.mobile-submenu {
+    display: none;
+    background: #f8f9fd;
+    border-left: 3px solid #194388;
+    padding: 6px 0;
+    margin: 0;
+}
+
+.mobile-submenu.active {
+    display: block;
+    animation: slideDown 0.18s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── NIVEL 2 — Subsecciones con toggle ──────────── */
+.mobile-submenu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 50px;
+    padding: 0 20px 0 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #edf0f7;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3a3a5c;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.mobile-submenu-toggle:last-child {
+    border-bottom: none;
+}
+
+.mobile-submenu-toggle:hover,
+.mobile-submenu-toggle:focus {
+    background: #eaf0ff;
+    color: #194388;
+    outline: none;
+}
+
+.mobile-submenu-toggle.active {
+    background: #eaf0ff;
+    color: #194388;
+}
+
+/* ── SUBMENÚ NIVEL 2 ────────────────────────────── */
+.mobile-submenu .mobile-submenu {
+    background: #ffffff;
+    border-left: 3px solid rgba(25, 67, 136, 0.25);
+    margin-left: 0;
+    padding: 4px 0;
+}
+
+/* ── NIVEL 3 — Links de destino ─────────────────── */
+.th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle) {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 0 20px 0 34px !important;
+    min-height: 48px !important;
+    font-size: 13.5px !important;
+    font-weight: 400 !important;
+    color: #525270 !important;
+    background: transparent !important;
+    border-bottom: 1px solid #f2f3fa !important;
+    text-decoration: none !important;
+    transition: background 0.15s ease, color 0.15s ease !important;
+    line-height: 1.35 !important;
+    border-left: none !important;
+}
+
+.th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle):last-child {
+    border-bottom: none !important;
+}
+
+.th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle):hover {
+    background: #eaf0ff !important;
+    color: #194388 !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* ── Íconos ─────────────────────────────────────── */
+.th-mobile-menu a i {
+    flex-shrink: 0 !important;
+    font-size: 14px !important;
+    color: #194388 !important;
+    opacity: 0.55 !important;
+    width: 18px !important;
+    text-align: center !important;
+}
+
+.th-mobile-menu a:hover i {
+    opacity: 1 !important;
+}
+
+.th-mobile-menu a img {
+    flex-shrink: 0 !important;
+    width: 18px !important;
+    height: 18px !important;
+    object-fit: contain !important;
+    opacity: 0.7 !important;
+}
+
+.th-mobile-menu a:hover img {
+    opacity: 1 !important;
+}
+
+/* ── Ítems deshabilitados ───────────────────────── */
+.th-mobile-menu a.text-muted,
+.th-mobile-menu a.text-muted:hover {
+    color: #b5bbd4 !important;
+    cursor: not-allowed !important;
+    background: transparent !important;
+}
+
+.th-mobile-menu a.text-muted i {
+    opacity: 0.3 !important;
+}
