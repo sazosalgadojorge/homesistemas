@@ -1,328 +1,347 @@
 /* =================================================
-   MENÚ MÓVIL — Diseño corporativo IT
+   Mobile drawer navigation
    ================================================= */
 
-/* ── Panel ─────────────────────────────────────── */
+.th-menu-wrapper {
+  background: rgba(8, 14, 28, 0.58) !important;
+  backdrop-filter: blur(8px);
+}
+
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
 .th-menu-wrapper .th-menu-area {
-    max-width: 340px !important;
-    border-right: none !important;
-    box-shadow: 6px 0 32px rgba(0, 0, 0, 0.22);
-    display: flex;
-    flex-direction: column;
+  width: min(360px, calc(100vw - 24px)) !important;
+  max-width: none !important;
+  height: calc(100dvh - 18px) !important;
+  margin: 9px 0 9px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #f7f9fd !important;
+  border: 1px solid rgba(25, 67, 136, 0.1) !important;
+  border-radius: 0 18px 18px 0;
+  box-shadow: 18px 0 45px rgba(8, 14, 28, 0.22);
+  left: 0 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateX(-105%);
+  transition: transform 0.28s ease !important;
 }
 
-@media (max-width: 400px) {
-    .th-menu-wrapper .th-menu-area {
-        max-width: 100% !important;
-    }
+.th-menu-wrapper.th-body-visible .th-menu-area {
+  left: 0 !important;
+  transform: translateX(0);
 }
 
-/* ── Header del panel ───────────────────────────── */
+@media (max-width: 430px) {
+  .th-menu-wrapper .th-menu-area {
+    width: calc(100vw - 16px) !important;
+    height: calc(100dvh - 16px) !important;
+    margin: 8px 0 8px 0;
+    border-radius: 0 16px 16px 0;
+  }
+}
+
 .th-menu-area {
-    padding: 0 !important;
-    background: #ffffff;
+  padding: 0 !important;
 }
 
-.mobile-logo {
-    padding: 18px 20px 16px;
-    border-bottom: 1px solid #edf0f7;
-    margin-bottom: 0;
-    text-align: left;
-    background: #ffffff;
+.th-menu-wrapper .mobile-logo {
+  min-height: 88px;
+  padding: 18px 64px 16px 22px !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center;
+  text-align: left !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e7ebf4;
 }
 
-/* ── Botón cierre ───────────────────────────────── */
+.th-menu-wrapper .mobile-logo a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.th-menu-wrapper .mobile-logo img {
+  max-height: 52px;
+  width: auto;
+}
+
 .th-menu-wrapper .th-menu-toggle {
-    right: -14px !important;
-    top: 22px !important;
-    width: 28px !important;
-    height: 28px !important;
-    line-height: 28px !important;
-    font-size: 13px !important;
-    background-color: #194388 !important;
-    border: 2px solid #ffffff !important;
-    box-shadow: 0 2px 8px rgba(25, 67, 136, 0.35) !important;
-    border-radius: 50% !important;
+  position: absolute;
+  top: 22px !important;
+  right: 20px !important;
+  width: 42px !important;
+  height: 42px !important;
+  line-height: 42px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  color: #194388 !important;
+  background: #eef3fb !important;
+  border: 1px solid #dbe4f1 !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  font-size: 16px !important;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
 }
 
-/* ── Scroll interno ─────────────────────────────── */
+.th-menu-wrapper .th-menu-toggle:hover {
+  background: #194388 !important;
+  color: #ffffff !important;
+}
+
 .th-mobile-menu {
-    margin-top: 0;
-    padding-bottom: 40px;
-    max-height: calc(100vh - 160px);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    text-align: left;
-    background: #ffffff;
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0 !important;
+  padding: 14px 14px 22px !important;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #f7f9fd !important;
+  text-align: left !important;
 }
 
-/* ── Resets de style.css ────────────────────────── */
+.th-mobile-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.th-mobile-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.th-mobile-menu::-webkit-scrollbar-thumb {
+  background: #d4ddeb;
+  border-radius: 999px;
+}
+
+.th-mobile-menu ul,
 .th-mobile-menu > ul {
-    padding: 0 !important;
-    margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
 }
 
-.th-mobile-menu ul {
-    padding-left: 0 !important;
-    margin: 0 !important;
+.th-mobile-menu li {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+  border: 0 !important;
 }
 
-.th-mobile-menu ul li {
-    border-bottom: none !important;
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
+.th-mobile-menu > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.th-mobile-menu ul li li:first-child {
-    border-top: none !important;
+.th-mobile-menu a,
+.mobile-menu-toggle,
+.mobile-submenu-toggle {
+  width: 100%;
+  min-width: 0;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  text-decoration: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
 }
 
-.th-mobile-menu ul li a {
-    color: inherit;
-    text-decoration: none;
+.th-mobile-menu a:before,
+.th-mobile-menu a:after {
+  display: none !important;
 }
 
-.th-mobile-menu ul li ul li {
-    padding-left: 0 !important;
-}
-
-.th-mobile-menu ul .th-item-has-children > a:after,
-.th-mobile-menu ul li a:before {
-    display: none !important;
-}
-
-/* ── Separadores nivel 1 ────────────────────────── */
-.th-mobile-menu > ul > li {
-    border-bottom: 1px solid #f0f2f8 !important;
-}
-
-.th-mobile-menu > ul > li:last-child {
-    border-bottom: none !important;
-}
-
-/* ── NIVEL 1 — Links simples (Inicio, Turnos) ───── */
-.th-mobile-menu > ul > li > a:not(.mobile-menu-toggle) {
-    display: flex !important;
-    align-items: center !important;
-    gap: 12px !important;
-    padding: 0 20px !important;
-    min-height: 58px !important;
-    font-size: 15px !important;
-    font-weight: 600 !important;
-    color: #1a1a2e !important;
-    background: #ffffff !important;
-    text-decoration: none !important;
-    border-left: 3px solid transparent !important;
-    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease !important;
-    letter-spacing: 0.01em !important;
-}
-
-.th-mobile-menu > ul > li > a:not(.mobile-menu-toggle):hover {
-    background: #f0f4ff !important;
-    color: #194388 !important;
-    border-left-color: #194388 !important;
-}
-
-/* ── NIVEL 1 — Botones con submenú (Sistemas...) ── */
+.th-mobile-menu > ul > li > a,
 .mobile-menu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 58px;
-    padding: 0 20px;
-    background: #ffffff;
-    border: none;
-    border-left: 3px solid transparent;
-    border-radius: 0;
-    font-size: 15px;
-    font-weight: 600;
-    color: #1a1a2e;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-    letter-spacing: 0.01em;
-    -webkit-appearance: none;
-    appearance: none;
+  min-height: 56px !important;
+  padding: 0 12px 0 14px !important;
+  color: #111827 !important;
+  background: #ffffff !important;
+  border: 1px solid #e8edf6 !important;
+  border-radius: 12px !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
 }
 
+.th-mobile-menu > ul > li > a:hover,
 .mobile-menu-toggle:hover,
-.mobile-menu-toggle:focus {
-    background: #f0f4ff;
-    color: #194388;
-    border-left-color: #194388;
-    outline: none;
-}
-
+.mobile-menu-toggle:focus,
 .mobile-menu-toggle.active {
-    background: #eef2fd;
-    color: #194388;
-    border-left-color: #194388;
+  color: #194388 !important;
+  background: #eef4ff !important;
+  border-color: #cfdcf3 !important;
+  outline: none !important;
 }
 
-/* ── Flecha toggle — badge circular ─────────────── */
+.th-mobile-menu > ul > li > a > i:not(.mobile-arrow),
+.mobile-menu-toggle > i:not(.mobile-arrow),
+.mobile-submenu-toggle > i:not(.mobile-arrow) {
+  flex: 0 0 34px !important;
+  width: 34px !important;
+  height: 34px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #194388 !important;
+  background: #eef3fb !important;
+  border-radius: 10px !important;
+  font-size: 15px !important;
+  opacity: 1 !important;
+}
+
+.mobile-menu-toggle span,
+.mobile-submenu-toggle span,
+.th-mobile-menu a {
+  min-width: 0;
+}
+
 .mobile-arrow {
-    flex-shrink: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: #f0f2f8;
-    color: #7a80a0;
-    font-size: 11px;
-    margin-left: auto;
-    transition: transform 0.22s ease, background 0.15s ease, color 0.15s ease;
+  flex: 0 0 30px !important;
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #64748b !important;
+  background: #f1f5f9 !important;
+  border-radius: 50% !important;
+  font-size: 11px !important;
+  transition: transform 0.2s ease, background 0.18s ease, color 0.18s ease;
 }
 
-.mobile-menu-toggle:hover .mobile-arrow,
-.mobile-menu-toggle.active .mobile-arrow {
-    background: #dce5f9;
-    color: #194388;
-}
-
-.mobile-submenu-toggle:hover .mobile-arrow,
-.mobile-submenu-toggle.active .mobile-arrow {
-    background: #dce5f9;
-    color: #194388;
-}
-
+.mobile-menu-toggle.active .mobile-arrow,
+.mobile-submenu-toggle.active .mobile-arrow,
 .mobile-arrow.rotated {
-    transform: rotate(180deg);
-    background: #dce5f9;
-    color: #194388;
+  color: #ffffff !important;
+  background: #194388 !important;
+  transform: rotate(180deg);
 }
 
-/* ── SUBMENÚ NIVEL 1 ────────────────────────────── */
 .mobile-submenu {
-    display: none;
-    background: #f8f9fd;
-    border-left: 3px solid #194388;
-    padding: 6px 0;
-    margin: 0;
+  display: none;
+  margin: 8px 0 0 !important;
+  padding: 8px !important;
+  background: #ffffff !important;
+  border: 1px solid #e7edf7 !important;
+  border-radius: 12px !important;
 }
 
 .mobile-submenu.active {
-    display: block;
-    animation: slideDown 0.18s ease-out;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  animation: mobileMenuOpen 0.18s ease-out;
 }
 
-@keyframes slideDown {
-    from { opacity: 0; transform: translateY(-8px); }
-    to   { opacity: 1; transform: translateY(0); }
+@keyframes mobileMenuOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* ── NIVEL 2 — Subsecciones con toggle ──────────── */
 .mobile-submenu-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 50px;
-    padding: 0 20px 0 24px;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #edf0f7;
-    border-radius: 0;
-    font-size: 14px;
-    font-weight: 500;
-    color: #3a3a5c;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.15s ease, color 0.15s ease;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-.mobile-submenu-toggle:last-child {
-    border-bottom: none;
+  min-height: 48px !important;
+  padding: 0 8px 0 10px !important;
+  color: #263248 !important;
+  background: #f8fafc !important;
+  border: 1px solid transparent !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  font-weight: 650 !important;
+  line-height: 1.25 !important;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
 }
 
 .mobile-submenu-toggle:hover,
-.mobile-submenu-toggle:focus {
-    background: #eaf0ff;
-    color: #194388;
-    outline: none;
-}
-
+.mobile-submenu-toggle:focus,
 .mobile-submenu-toggle.active {
-    background: #eaf0ff;
-    color: #194388;
+  color: #194388 !important;
+  background: #eef4ff !important;
+  border-color: #d9e5f7 !important;
+  outline: none !important;
 }
 
-/* ── SUBMENÚ NIVEL 2 ────────────────────────────── */
 .mobile-submenu .mobile-submenu {
-    background: #ffffff;
-    border-left: 3px solid rgba(25, 67, 136, 0.25);
-    margin-left: 0;
-    padding: 4px 0;
+  margin-top: 6px !important;
+  padding: 6px !important;
+  background: #f8fafc !important;
+  border-color: #edf2f7 !important;
 }
 
-/* ── NIVEL 3 — Links de destino ─────────────────── */
 .th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle) {
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px !important;
-    padding: 0 20px 0 34px !important;
-    min-height: 48px !important;
-    font-size: 13.5px !important;
-    font-weight: 400 !important;
-    color: #525270 !important;
-    background: transparent !important;
-    border-bottom: 1px solid #f2f3fa !important;
-    text-decoration: none !important;
-    transition: background 0.15s ease, color 0.15s ease !important;
-    line-height: 1.35 !important;
-    border-left: none !important;
-}
-
-.th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle):last-child {
-    border-bottom: none !important;
+  min-height: 44px !important;
+  padding: 9px 10px !important;
+  color: #42506a !important;
+  background: transparent !important;
+  border-radius: 9px !important;
+  font-size: 13px !important;
+  font-weight: 550 !important;
+  line-height: 1.35 !important;
+  transition: background 0.18s ease, color 0.18s ease;
 }
 
 .th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle):hover {
-    background: #eaf0ff !important;
-    color: #194388 !important;
-    transform: none !important;
-    box-shadow: none !important;
+  color: #194388 !important;
+  background: #eef4ff !important;
 }
 
-/* ── Íconos ─────────────────────────────────────── */
-.th-mobile-menu a i {
-    flex-shrink: 0 !important;
-    font-size: 14px !important;
-    color: #194388 !important;
-    opacity: 0.55 !important;
-    width: 18px !important;
-    text-align: center !important;
+.th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle) i,
+.th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle) img {
+  flex: 0 0 24px !important;
+  width: 24px !important;
+  height: 24px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  object-fit: contain !important;
+  color: #194388 !important;
+  opacity: 0.85 !important;
+  font-size: 14px !important;
+  text-align: center !important;
 }
 
-.th-mobile-menu a:hover i {
-    opacity: 1 !important;
-}
-
-.th-mobile-menu a img {
-    flex-shrink: 0 !important;
-    width: 18px !important;
-    height: 18px !important;
-    object-fit: contain !important;
-    opacity: 0.7 !important;
-}
-
-.th-mobile-menu a:hover img {
-    opacity: 1 !important;
-}
-
-/* ── Ítems deshabilitados ───────────────────────── */
 .th-mobile-menu a.text-muted,
 .th-mobile-menu a.text-muted:hover {
-    color: #b5bbd4 !important;
-    cursor: not-allowed !important;
-    background: transparent !important;
+  color: #a6afc2 !important;
+  background: transparent !important;
+  cursor: not-allowed !important;
 }
 
-.th-mobile-menu a.text-muted i {
-    opacity: 0.3 !important;
+.th-mobile-menu a.text-muted i,
+.th-mobile-menu a.text-muted img {
+  opacity: 0.35 !important;
+}
+
+.th-mobile-menu > ul > li > a.mobile-primary-action,
+.th-mobile-menu .mobile-primary-action {
+  color: #ffffff !important;
+  background: #194388 !important;
+  border-color: #194388 !important;
+}
+
+.th-mobile-menu > ul > li > a.mobile-primary-action:hover,
+.th-mobile-menu .mobile-primary-action:hover {
+  color: #ffffff !important;
+  background: #153978 !important;
+}
+
+.th-mobile-menu > ul > li > a.mobile-primary-action > i,
+.th-mobile-menu .mobile-primary-action > i {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.16) !important;
 }

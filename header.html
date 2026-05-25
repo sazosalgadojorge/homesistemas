@@ -13,8 +13,8 @@
                             <a class="" href="index.html"><span data-mask-src="assets/img/Logotipo.svg" class="mask-icon"></span><img src="assets/img/Logotipo.svg" alt="Webteck" style="height: 60px; width: auto;" /></a>
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <nav class="main-menu style2 d-none d-lg-inline-block">
+                    <div class="col-auto header-menu-col">
+                        <nav class="main-menu style2 d-none d-xl-inline-block">
                             <ul>
                                 <li class="menu-item-has-children mega-menu-wrap">
                                     <a href="Index.html">Inicio</a>
@@ -172,11 +172,11 @@
                                 </li>
                             </ul>
                         </nav>
-                        <button type="button" class="th-menu-toggle d-block d-lg-none"><i class="far fa-bars"></i></button>
+                        <button type="button" class="th-menu-toggle d-block d-xl-none"><i class="far fa-bars"></i></button>
                     </div>
-                    <div class="col-auto d-none d-xl-inline-block">
+                    <div class="col-auto d-none d-xl-inline-block header-actions-col">
                         <div class="header-button">
-                            <a class="th-btn style-radius text-capitalize" data-bs-toggle="modal" data-bs-target="#miModal"><i class="fi fi-rr-apps-add" id="iconos-flat"></i>Gestion usuarios</a>
+                            <a class="th-btn style-radius text-capitalize" data-bs-toggle="modal" data-bs-target="#miModal"><i class="fi fi-rr-apps-add" id="iconos-flat"></i>Gestión usuarios</a>
                         </div>
                     </div>
                 </div>
@@ -189,7 +189,7 @@
 
 <div class="th-menu-wrapper">
     <div class="th-menu-area text-center">
-        <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+        <button class="th-menu-toggle" aria-label="Cerrar menú"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
             <a href="index.html"><img src="assets/img/Logotipo.svg" alt="Logotipo" style="height: 50px; width: auto;" /></a>
         </div>
@@ -197,10 +197,11 @@
         <div class="th-mobile-menu">
             <ul>
                 <li class="menu-item-has-children mega-menu-wrap">
-                    <a href="Index.html">Inicio</a>
+                    <a href="Index.html"><i class="fi fi-rr-home"></i>Inicio</a>
                 </li>
                 <li class="menu-item-has-children">
                     <a href="#" class="mobile-menu-toggle">
+                        <i class="fi fi-rr-apps"></i>
                         <span>Sistemas</span>
                         <i class="fi fi-rr-angle-down mobile-arrow"></i>
                     </a>
@@ -293,6 +294,7 @@
                 </li>
                 <li class="menu-item-has-children">
                     <a href="#" class="mobile-menu-toggle">
+                        <i class="fi fi-rr-headset"></i>
                         <span>Soporte TI</span>
                         <i class="fi fi-rr-angle-down mobile-arrow"></i>
                     </a>
@@ -320,6 +322,7 @@
 
                 <li class="menu-item-has-children">
                     <a href="#" class="mobile-menu-toggle">
+                        <i class="fi fi-rr-folder"></i>
                         <span>Recursos</span>
                         <i class="fi fi-rr-angle-down mobile-arrow"></i>
                     </a>
@@ -331,7 +334,10 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="nav-link" href="contact.html">Turnos</a>
+                    <a class="nav-link" href="contact.html"><i class="fi fi-rr-calendar-clock"></i>Turnos</a>
+                </li>
+                <li>
+                    <a class="mobile-primary-action" href="#miModal" data-bs-toggle="modal" data-bs-target="#miModal"><i class="fi fi-rr-apps-add"></i>Gestión usuarios</a>
                 </li>
             </ul>
         </div>
@@ -376,5 +382,3 @@
 
 
 <!--============================== All Js File ============================== -->
-
-

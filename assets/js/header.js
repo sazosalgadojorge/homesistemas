@@ -41,13 +41,14 @@ function initializeMenuFunctionality() {
     if (openButton && menuWrapper) {
       openButton.addEventListener("click", function () {
         menuWrapper.classList.add("th-body-visible");
+        document.body.classList.add("mobile-menu-open");
         setTimeout(initializeMobileMenu, 100);
       });
     }
 
     if (closeButton && menuWrapper) {
       closeButton.addEventListener("click", function () {
-        menuWrapper.classList.remove("th-body-visible");
+        closeMobileMenu(menuWrapper);
       });
     }
 
@@ -55,7 +56,7 @@ function initializeMenuFunctionality() {
     if (menuWrapper) {
       menuWrapper.addEventListener("click", function (e) {
         if (!e.target.closest(".th-menu-area")) {
-          menuWrapper.classList.remove("th-body-visible");
+          closeMobileMenu(menuWrapper);
         }
       });
     }
@@ -63,7 +64,7 @@ function initializeMenuFunctionality() {
     // Cerrar menú al hacer clic en un link de navegación
     headerArea.querySelectorAll(".th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle)").forEach(function (link) {
       link.addEventListener("click", function () {
-        if (menuWrapper) menuWrapper.classList.remove("th-body-visible");
+        if (menuWrapper) closeMobileMenu(menuWrapper);
       });
     });
 
@@ -82,6 +83,11 @@ function initializeMobileMenu() {
     document.addEventListener('click', mobileMenuClickHandler);
 }
 
+function closeMobileMenu(menuWrapper) {
+    menuWrapper.classList.remove("th-body-visible");
+    document.body.classList.remove("mobile-menu-open");
+}
+
 function mobileMenuClickHandler(e) {
     if (e.target.closest('.mobile-menu-toggle') || e.target.closest('.mobile-submenu-toggle')) {
         e.preventDefault();
@@ -94,9 +100,11 @@ function mobileMenuClickHandler(e) {
         if (submenu && submenu.classList.contains('mobile-submenu')) {
             if (submenu.classList.contains('active')) {
                 submenu.classList.remove('active');
+                toggle.classList.remove('active');
                 arrow.classList.remove('rotated');
             } else {
                 submenu.classList.add('active');
+                toggle.classList.add('active');
                 arrow.classList.add('rotated');
             }
         }
