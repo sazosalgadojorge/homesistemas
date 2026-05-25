@@ -1028,29 +1028,171 @@
     }
     
     
-    // /*----------- 00. Right Click Disable ----------*/
-    //   window.addEventListener('contextmenu', function (e) {
-    //     // do something here... 
-    //     e.preventDefault();  
-    //   }, false); 
+    /*---------- header.js merged ----------*/
+    function renderhead() {
+        const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
+        const headerUrl = isProduction ? './header.html' : 'header.html';
 
-    // /*----------- 00. Inspect Element Disable ----------*/
-    //   document.onkeydown = function (e) {
-    //     if (event.keyCode == 123) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //   } 
-    
+        fetch(headerUrl)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+          })
+          .then(data => {
+            const headerArea = document.getElementById('header-area');
+            if (!headerArea) return;
+            headerArea.innerHTML = data;
+            initializeMenuFunctionality();
+          })
+          .catch(() => {
+            fetch('./header.html')
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById('header-area').innerHTML = data;
+                initializeMenuFunctionality();
+              })
+              .catch(() => {});
+          });
+    }
+
+    function initializeMenuFunctionality() {
+        const headerArea = document.getElementById('header-area');
+        const openButton = headerArea.querySelector(".th-menu-toggle.d-block");
+        const menuWrapper = document.querySelector(".th-menu-wrapper");
+        const closeButton = document.querySelector(".th-menu-wrapper .th-menu-toggle");
+
+        if (openButton && menuWrapper) {
+          openButton.addEventListener("click", function () {
+            menuWrapper.classList.add("th-body-visible");
+            document.body.classList.add("mobile-menu-open");
+            setTimeout(initializeMobileMenu, 100);
+          });
+        }
+        if (closeButton && menuWrapper) {
+          closeButton.addEventListener("click", () => closeMobileMenu(menuWrapper));
+        }
+        if (menuWrapper) {
+          menuWrapper.addEventListener("click", function (e) {
+            if (!e.target.closest(".th-menu-area")) closeMobileMenu(menuWrapper);
+          });
+        }
+        headerArea.querySelectorAll(".th-mobile-menu a:not(.mobile-menu-toggle):not(.mobile-submenu-toggle)").forEach(function (link) {
+          link.addEventListener("click", () => { if (menuWrapper) closeMobileMenu(menuWrapper); });
+        });
+        try {
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+            [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+        } catch (_) {}
+        initializeMobileMenu();
+    }
+
+    function initializeMobileMenu() {
+        document.removeEventListener('click', mobileMenuClickHandler);
+        document.addEventListener('click', mobileMenuClickHandler);
+    }
+
+    function closeMobileMenu(menuWrapper) {
+        menuWrapper.classList.remove("th-body-visible");
+        document.body.classList.remove("mobile-menu-open");
+    }
+
+    function mobileMenuClickHandler(e) {
+        if (e.target.closest('.mobile-menu-toggle') || e.target.closest('.mobile-submenu-toggle')) {
+            e.preventDefault();
+            e.stopPropagation();
+            const toggle = e.target.closest('.mobile-menu-toggle') || e.target.closest('.mobile-submenu-toggle');
+            const submenu = toggle.nextElementSibling;
+            const arrow = toggle.querySelector('.mobile-arrow');
+            if (submenu && submenu.classList.contains('mobile-submenu')) {
+                submenu.classList.toggle('active');
+                toggle.classList.toggle('active');
+                arrow.classList.toggle('rotated');
+            }
+        }
+    }
+
+    renderhead();
+
+    /*---------- tabla-style.js merged ----------*/
+    document.querySelectorAll('th').forEach((th) => {
+        const resizer = document.createElement('div');
+        resizer.className = 'resizer';
+        th.appendChild(resizer);
+        resizer.addEventListener('mousedown', (event) => {
+          const startX = event.clientX;
+          const startWidth = th.offsetWidth;
+          document.body.style.userSelect = 'none';
+          document.body.style.webkitUserSelect = 'none';
+          document.body.style.mozUserSelect = 'none';
+          document.body.style.msUserSelect = 'none';
+          event.preventDefault();
+          const onMouseMove = (e) => { th.style.width = `${startWidth + (e.clientX - startX)}px`; };
+          const onMouseUp = () => {
+            document.body.style.userSelect = '';
+            document.body.style.webkitUserSelect = '';
+            document.body.style.mozUserSelect = '';
+            document.body.style.msUserSelect = '';
+            document.removeEventListener('mousemove', onMouseMove);
+            document.removeEventListener('mouseup', onMouseUp);
+          };
+          document.addEventListener('mousemove', onMouseMove);
+          document.addEventListener('mouseup', onMouseUp);
+        });
+    });
+
+    /*---------- egg.js merged (Konami code) ----------*/
+    (function() {
+        const konamiCode = [
+          "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown",
+          "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"
+        ];
+        let konamiIndex = 0;
+        document.addEventListener("keydown", (e) => {
+          if (e.key === konamiCode[konamiIndex]) {
+            konamiIndex++;
+            if (konamiIndex === konamiCode.length) {
+              const container = document.createElement("div");
+              container.style.cssText = "position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;text-align:center;background:rgba(255,255,255,0.95);border:4px solid #ff0000;border-radius:12px;box-shadow:0 0 20px rgba(0,0,0,0.3);padding:20px";
+              const msg = document.createElement("p");
+              msg.textContent = "\u00a1Te ganaste el whiskey! \ud83c\udf7a\u2728";
+              msg.style.cssText = "font-size:1.5rem;color:#d01000;margin-bottom:10px";
+              const gif = document.createElement("img");
+              gif.src = "./assets/img/egg.gif";
+              gif.alt = "Super Mario";
+              gif.style.cssText = "width:200px;height:200px;object-fit:contain";
+              container.appendChild(msg);
+              container.appendChild(gif);
+              document.body.appendChild(container);
+              setTimeout(() => container.remove(), 5000);
+              konamiIndex = 0;
+            }
+          } else {
+            konamiIndex = 0;
+          }
+        });
+    })();
+
+    /*---------- status-servers.js merged ----------*/
+    (function() {
+        function mostrarEstadoServidores(estado) {
+            const toastEl = document.getElementById('serverToast');
+            const toastMessage = document.getElementById('toastMessage');
+            if (!toastEl || !toastMessage) return;
+            if (estado === 'ok') {
+              toastEl.classList.remove('bg-danger');
+              toastEl.classList.add('bg-success');
+              toastMessage.textContent = '\u2705 Servidores operativos al 100%';
+            } else if (estado === 'lento') {
+              toastEl.classList.remove('bg-success');
+              toastEl.classList.add('bg-danger');
+              toastMessage.textContent = '\u26a0\ufe0f Servidores respondiendo con lentitud';
+            }
+            new bootstrap.Toast(toastEl).show();
+        }
+        const estadoServidor = 'ok';
+        mostrarEstadoServidores(estadoServidor);
+    })();
+
 })(jQuery);

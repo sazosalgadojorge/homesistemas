@@ -1,5 +1,5 @@
 {
-  "dependencies": {
-    "preline": "^3.0.0"
+  "devDependencies": {
+    "purgecss": "^8.0.0"
   }
 }

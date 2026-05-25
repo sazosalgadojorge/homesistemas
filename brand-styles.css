@@ -44,24 +44,6 @@
 }
 
 /* =================================
-   ÁREA DEL SLIDER
-   ================================= */
-
-.slider-area {
-  position: relative;
-  text-align: center;
-}
-
-/* =================================
-   SLIDER DE MARCAS
-   ================================= */
-
-.brand-slider4 {
-  padding-bottom: 60px;
-  border-bottom: 1px solid #D3D3E7;
-}
-
-/* =================================
    CAJAS DE MARCAS
    ================================= */
 
@@ -377,16 +359,6 @@
 }
 
 /* =================================
-   VARIABLES CSS (si están definidas)
-   ================================= */
-
-:root {
-  --theme-color: #2463AE;
-  --title-color: #141D38;
-  --white-color: #ffffff;
-}
-
-/* =================================
    HERO BANNER
    ================================= */
 
@@ -437,15 +409,6 @@
   letter-spacing: 0.04em;
   padding: 5px 14px;
   border-radius: 100px;
-}
-
-/* Título */
-.hero-title {
-  font-size: clamp(2.4rem, 4vw, 3.8rem);
-  font-weight: 700;
-  line-height: 1.1;
-  color: #ffffff;
-  margin: 0;
 }
 
 /* Subtítulo */
@@ -675,21 +638,6 @@ footer .container.th-container4 {
 .position-relative.bg-smoke3.th-radius2 > .container.th-container4 {
   padding-left: clamp(18px, 3vw, 36px);
   padding-right: clamp(18px, 3vw, 36px);
-}
-
-.sec-title,
-.box-title,
-.hero-title,
-.hero-subtitle,
-.team-desig,
-.toast-body {
-  overflow-wrap: anywhere;
-}
-
-.header-layout17 .menu-area {
-  min-height: 96px;
-  display: flex;
-  align-items: center;
 }
 
 .header-layout17 .menu-area .row {
@@ -941,15 +889,6 @@ footer .container.th-container4 {
   }
 }
 
-.feature-wrap9,
-.feature9-content,
-.feature-thumb12_wrapp,
-.img-box19,
-.download4-thumb,
-.team-box4 {
-  min-width: 0;
-}
-
 .feature-thumb12_wrapp img,
 .img-box19 img,
 .download4-thumb img {
@@ -965,10 +904,6 @@ footer .container.th-container4 {
 
 .stats-block > [class*="col-"] {
   min-width: 0;
-}
-
-.about16-year-counter_number {
-  line-height: 1.1;
 }
 
 .col-text-user p {
